@@ -21,6 +21,7 @@ import json
 import os
 import sqlite3
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -58,6 +59,9 @@ GDELT_QUERIES = {
 
 GDELT_ARTICLES_PER_QUERY = 20   # сколько статей тянем за один GDELT-запрос
 GDELT_TIMESPAN = "1d"           # глубина поиска: за последние сутки
+GDELT_REQUEST_DELAY = 6         # пауза между запросами к GDELT (сек) — у API жёсткий rate limit
+GDELT_MAX_RETRIES = 3           # сколько раз повторить запрос при 429/5xx
+GDELT_RETRY_BACKOFF = 10        # базовая пауза перед повтором (сек), растёт экспоненциально
 
 ARTICLES_PER_SOURCE = 20      # сколько свежих статей тянем за один источник
 ANALYZE_COUNT = 30            # сколько последних статей отдаём в LLM на анализ
@@ -130,7 +134,10 @@ def _parse_gdelt_seendate(value):
 
 def fetch_gdelt(source_name, query):
     """Запрашивает статьи у GDELT DOC 2.0 API и возвращает их в унифицированном
-    формате (том же, что и fetch_rss), чтобы дальше пайплайн не отличал источники."""
+    формате (том же, что и fetch_rss), чтобы дальше пайплайн не отличал источники.
+
+    GDELT держит жёсткий rate limit на анонимные запросы — при 429/5xx делаем
+    несколько попыток с экспоненциальной задержкой, прежде чем сдаться."""
     articles = []
     params = {
         "query": query,
@@ -140,9 +147,51 @@ def fetch_gdelt(source_name, query):
         "sort": "DateDesc",
         "format": "json",
     }
+
+    resp = None
+    last_error = None
+    for attempt in range(1, GDELT_MAX_RETRIES + 1):
+        try:
+            resp = requests.get(
+                GDELT_DOC_API_URL,
+                params=params,
+                timeout=20,
+                headers={"User-Agent": "news-tv-text-pipeline/1.0"},
+            )
+            if resp.status_code == 429 or resp.status_code >= 500:
+                wait = GDELT_RETRY_BACKOFF * attempt
+                print(
+                    f"  [!] {source_name}: HTTP {resp.status_code} (попытка {attempt}/{GDELT_MAX_RETRIES}), "
+                    f"жду {wait}с...",
+                    file=sys.stderr,
+                )
+                last_error = f"HTTP {resp.status_code}"
+                if attempt < GDELT_MAX_RETRIES:
+                    time.sleep(wait)
+                    continue
+                else:
+                    resp = None  # все попытки исчерпаны — статьи не получим
+                    break
+            resp.raise_for_status()
+            break  # успех
+        except requests.exceptions.RequestException as e:
+            last_error = str(e)
+            wait = GDELT_RETRY_BACKOFF * attempt
+            print(
+                f"  [!] {source_name}: исключение при загрузке ({e}), "
+                f"попытка {attempt}/{GDELT_MAX_RETRIES}",
+                file=sys.stderr,
+            )
+            if attempt < GDELT_MAX_RETRIES:
+                time.sleep(wait)
+            resp = None
+
+    if resp is None:
+        print(f"  [!] {source_name}: не удалось получить данные после {GDELT_MAX_RETRIES} попыток "
+              f"(последняя ошибка: {last_error})", file=sys.stderr)
+        return articles
+
     try:
-        resp = requests.get(GDELT_DOC_API_URL, params=params, timeout=20)
-        resp.raise_for_status()
         # GDELT иногда отдаёт пустое тело или невалидный JSON при перегрузке —
         # это не должно валить весь пайплайн.
         payload = resp.json()
@@ -162,7 +211,7 @@ def fetch_gdelt(source_name, query):
                 "published_at": published or datetime.now(timezone.utc).isoformat(),
             })
     except Exception as e:
-        print(f"  [!] {source_name}: исключение при загрузке ({e})", file=sys.stderr)
+        print(f"  [!] {source_name}: исключение при разборе ответа ({e})", file=sys.stderr)
 
     return articles
 
@@ -272,12 +321,16 @@ def main():
         by_source_counts[source_name] = len(articles)
 
     # 1b. Сбор новостей из GDELT DOC 2.0 (доп. источник наравне с RSS)
-    for source_name, query in GDELT_QUERIES.items():
+    gdelt_sources = list(GDELT_QUERIES.items())
+    for i, (source_name, query) in enumerate(gdelt_sources):
         print(f"Fetching {source_name} ...")
         articles = fetch_gdelt(source_name, query)
         print(f"  -> {len(articles)} статей получено")
         all_fetched.extend(articles)
         by_source_counts[source_name] = len(articles)
+        # Пауза перед следующим запросом к GDELT, чтобы не упереться в rate limit
+        if i < len(gdelt_sources) - 1:
+            time.sleep(GDELT_REQUEST_DELAY)
 
     new_count = save_new_articles(conn, all_fetched)
     print(f"Новых статей сохранено в базу: {new_count}")
