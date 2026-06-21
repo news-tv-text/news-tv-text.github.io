@@ -21,12 +21,12 @@ import json
 import os
 import sqlite3
 import sys
-import time
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 import feedparser
-import requests
 import anthropic
 
 # ---------- Пути ----------
@@ -36,48 +36,54 @@ DATA_JSON_PATH = ROOT_DIR / "data.json"
 
 # ---------- Источники ----------
 RSS_FEEDS = {
+    # Россия
     "ТАСС": "https://tass.ru/rss/v2.xml",
     "РИА Новости": "https://ria.ru/export/rss2/index.xml",
     "Интерфакс": "https://www.interfax.ru/rss.asp",
+    # Великобритания / международные англоязычные
     "The Guardian World": "https://www.theguardian.com/world/rss",
     "BBC World": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "NYT World": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+    "NPR World": "https://feeds.npr.org/1004/rss.xml",
+    # Ближний Восток
+    "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml",
+    # Европа (континентальная)
+    "France24": "https://www.france24.com/en/rss",
+    "DW (Германия)": "https://rss.dw.com/rdf/rss-en-all",
+    # Азия
+    "Times of India": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+    # Африка
+    "AllAfrica": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
 }
 
-# ---------- GDELT DOC 2.0 ----------
-# GDELT DOC API не требует ключа. Документация:
-# https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/
-GDELT_DOC_API_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
-
-# Несколько запросов под тему "Россия и связанные с ней сюжеты" —
-# на русском и английском, чтобы поймать как русскоязычные источники
-# (которые GDELT тоже индексирует), так и зарубежное освещение.
-GDELT_QUERIES = {
-    "GDELT: Russia (en)": 'Russia sourcelang:eng',
-    "GDELT: Россия (ru)": 'Россия sourcelang:rus',
-    "GDELT: Russia-Ukraine (en)": '(Russia OR Russian) (Ukraine OR Kremlin OR Putin) sourcelang:eng',
-}
-
-GDELT_ARTICLES_PER_QUERY = 20   # сколько статей тянем за один GDELT-запрос
-GDELT_TIMESPAN = "1d"           # глубина поиска: за последние сутки
-GDELT_REQUEST_DELAY = 8         # пауза между запросами к GDELT (сек) — у API жёсткий rate limit
-GDELT_MAX_RETRIES = 2           # сколько раз повторить запрос при 429/5xx
-GDELT_RETRY_BACKOFF = 8         # базовая пауза перед повтором (сек), растёт экспоненциально
-
-# GitHub-hosted runners сидят на общих IP-диапазонах Azure, которые у GDELT
-# систематически попадают под rate limit (429) независимо от частоты наших
-# запросов. Поэтому GDELT-запросы всегда идут через SOCKS5-прокси со своим
-# отдельным IP. Прокси задаётся переменной окружения (GitHub Actions secret):
-#   GDELT_SOCKS5_PROXY=socks5://user:password@host:port
-GDELT_SOCKS5_PROXY = os.environ.get("GDELT_SOCKS5_PROXY", "").strip()
-GDELT_PROXIES = (
-    {"http": GDELT_SOCKS5_PROXY, "https": GDELT_SOCKS5_PROXY}
-    if GDELT_SOCKS5_PROXY
-    else None
-)
-
-ARTICLES_PER_SOURCE = 20      # сколько свежих статей тянем за один источник
+ARTICLES_PER_SOURCE = 20      # сколько свежих статей тянем за один RSS-источник
 ANALYZE_COUNT = 30            # сколько последних статей отдаём в LLM на анализ
 RECENT_ARTICLES_IN_OUTPUT = 20  # сколько статей показываем в ленте на сайте
+FETCH_TIMEOUT_SECONDS = 15    # таймаут на скачивание одной RSS-ленты
+
+# GDELT DOC 2.0 API: глобальный индекс новостей на 100+ языках, обновляется
+# каждые 15 минут, без ключа. Используем как ДОПОЛНИТЕЛЬНЫЙ источник поверх RSS —
+# у него бывает нестабильный rate-limit (изредка отдаёт 429), поэтому ошибки
+# по нему не должны ронять весь пайплайн.
+GDELT_BASE_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
+GDELT_QUERIES = {
+    "GDELT: Россия/СНГ (rus)": "sourcelang:rus",
+    "GDELT: Китай (zho)": "sourcelang:zho",
+    "GDELT: Латинская Америка (spa)": "sourcelang:spa",
+    "GDELT: Ближний Восток (ara)": "sourcelang:ara",
+}
+GDELT_TIMESPAN = "2h"          # окно поиска для каждого запуска (с запасом на час между запусками)
+GDELT_MAX_RECORDS = 20         # статей на один GDELT-запрос
+GDELT_TIMEOUT_SECONDS = 20
+
+# Некоторые сайты (France24, DW, Times of India и др.) блокируют запросы без
+# "браузерного" User-Agent или отдают иной ответ ботам. Подставляем его явно.
+HTTP_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    )
+}
 
 # ---------- Openmodel (Anthropic-совместимый API) ----------
 OPENMODEL_API_KEY = os.environ.get("OPENMODEL_API_KEY")
@@ -101,10 +107,26 @@ def init_db():
 
 
 def fetch_rss(source_name, url):
-    """Скачивает RSS-ленту и возвращает список статей в унифицированном формате."""
+    """Скачивает RSS-ленту и возвращает список статей в унифицированном формате.
+
+    Сначала пробуем скачать вручную через urllib с таймаутом и "браузерным"
+    User-Agent (некоторые сайты блокируют запросы без него или зависают).
+    Если это не получилось — пробуем напрямую через feedparser как запасной
+    вариант. Падение одного источника не должно останавливать весь пайплайн.
+    """
     articles = []
+    raw_bytes = None
+
     try:
-        feed = feedparser.parse(url)
+        request = urllib.request.Request(url, headers=HTTP_HEADERS)
+        with urllib.request.urlopen(request, timeout=FETCH_TIMEOUT_SECONDS) as resp:
+            raw_bytes = resp.read()
+    except Exception as e:
+        print(f"  [!] {source_name}: не удалось скачать напрямую ({e}), пробуем через feedparser...", file=sys.stderr)
+
+    try:
+        feed = feedparser.parse(raw_bytes) if raw_bytes is not None else feedparser.parse(url)
+
         if feed.bozo and not feed.entries:
             print(f"  [!] {source_name}: ошибка парсинга ({feed.bozo_exception})", file=sys.stderr)
             return articles
@@ -128,115 +150,60 @@ def fetch_rss(source_name, url):
                 "published_at": published or datetime.now(timezone.utc).isoformat(),
             })
     except Exception as e:
-        print(f"  [!] {source_name}: исключение при загрузке ({e})", file=sys.stderr)
+        print(f"  [!] {source_name}: исключение при разборе ({e})", file=sys.stderr)
 
     return articles
 
 
-def _parse_gdelt_seendate(value):
-    """GDELT отдаёт seendate в формате YYYYMMDDTHHMMSSZ. Конвертируем в ISO 8601."""
-    if not value:
-        return None
-    try:
-        dt = datetime.strptime(value, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
-        return dt.isoformat()
-    except ValueError:
-        return None
-
-
 def fetch_gdelt(source_name, query):
-    """Запрашивает статьи у GDELT DOC 2.0 API и возвращает их в унифицированном
-    формате (том же, что и fetch_rss), чтобы дальше пайплайн не отличал источники.
+    """Запрашивает GDELT DOC 2.0 API и возвращает статьи в унифицированном формате.
 
-    GitHub-hosted runners сидят на общих IP-диапазонах, которые у GDELT
-    систематически попадают под rate limit — поэтому запрос всегда идёт через
-    SOCKS5-прокси (GDELT_PROXIES), если он настроен. При 429/5xx делаем
-    несколько попыток с экспоненциальной задержкой, прежде чем сдаться."""
+    GDELT иногда отдаёт 429 (rate limit) или временные сетевые ошибки — это
+    штатная ситуация для бесплатного API без ключа, поэтому любая ошибка
+    здесь просто пропускает источник, не прерывая остальной пайплайн.
+    """
     articles = []
     params = {
         "query": query,
-        "mode": "ArtList",
-        "maxrecords": str(GDELT_ARTICLES_PER_QUERY),
+        "mode": "artlist",
+        "maxrecords": str(GDELT_MAX_RECORDS),
         "timespan": GDELT_TIMESPAN,
-        "sort": "DateDesc",
         "format": "json",
+        "sort": "datedesc",
     }
-
-    resp = None
-    last_error = None
-    for attempt in range(1, GDELT_MAX_RETRIES + 1):
-        try:
-            resp = requests.get(
-                GDELT_DOC_API_URL,
-                params=params,
-                timeout=20,
-                proxies=GDELT_PROXIES,
-                headers={
-                    "User-Agent": (
-                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                        "AppleWebKit/537.36 (KHTML, like Gecko) "
-                        "Chrome/124.0.0.0 Safari/537.36"
-                    )
-                },
-            )
-            if resp.status_code == 429 or resp.status_code >= 500:
-                retry_after = resp.headers.get("Retry-After")
-                if retry_after and retry_after.isdigit():
-                    wait = int(retry_after)
-                else:
-                    wait = GDELT_RETRY_BACKOFF * attempt
-                print(
-                    f"  [!] {source_name}: HTTP {resp.status_code} (попытка {attempt}/{GDELT_MAX_RETRIES}), "
-                    f"жду {wait}с...",
-                    file=sys.stderr,
-                )
-                last_error = f"HTTP {resp.status_code}"
-                if attempt < GDELT_MAX_RETRIES:
-                    time.sleep(wait)
-                    continue
-                else:
-                    resp = None  # все попытки исчерпаны — статьи не получим
-                    break
-            resp.raise_for_status()
-            break  # успех
-        except requests.exceptions.RequestException as e:
-            last_error = str(e)
-            wait = GDELT_RETRY_BACKOFF * attempt
-            print(
-                f"  [!] {source_name}: исключение при загрузке ({e}), "
-                f"попытка {attempt}/{GDELT_MAX_RETRIES}",
-                file=sys.stderr,
-            )
-            if attempt < GDELT_MAX_RETRIES:
-                time.sleep(wait)
-            resp = None
-
-    if resp is None:
-        print(f"  [!] {source_name}: не удалось получить данные после {GDELT_MAX_RETRIES} попыток "
-              f"(последняя ошибка: {last_error})", file=sys.stderr)
-        return articles
+    url = GDELT_BASE_URL + "?" + urllib.parse.urlencode(params)
 
     try:
-        # GDELT иногда отдаёт пустое тело или невалидный JSON при перегрузке —
-        # это не должно валить весь пайплайн.
-        payload = resp.json()
-
-        for item in payload.get("articles", [])[:GDELT_ARTICLES_PER_QUERY]:
-            link = (item.get("url") or "").strip()
-            title = (item.get("title") or "").strip()
-            if not link or not title:
-                continue
-
-            published = _parse_gdelt_seendate(item.get("seendate"))
-
-            articles.append({
-                "source": source_name,
-                "title": title,
-                "url": link,
-                "published_at": published or datetime.now(timezone.utc).isoformat(),
-            })
+        request = urllib.request.Request(url, headers=HTTP_HEADERS)
+        with urllib.request.urlopen(request, timeout=GDELT_TIMEOUT_SECONDS) as resp:
+            raw = resp.read()
+        data = json.loads(raw)
     except Exception as e:
-        print(f"  [!] {source_name}: исключение при разборе ответа ({e})", file=sys.stderr)
+        print(f"  [!] {source_name}: GDELT недоступен сейчас ({e}) — пропускаем", file=sys.stderr)
+        return articles
+
+    for item in data.get("articles", []):
+        link = (item.get("url") or "").strip()
+        title = (item.get("title") or "").strip()
+        if not link or not title:
+            continue
+
+        # GDELT отдаёт seendate в формате YYYYMMDDTHHMMSSZ
+        published = None
+        seendate = item.get("seendate")
+        if seendate:
+            try:
+                published = datetime.strptime(seendate, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc).isoformat()
+            except ValueError:
+                pass
+
+        domain = item.get("domain", "")
+        articles.append({
+            "source": f"{source_name} ({domain})" if domain else source_name,
+            "title": title,
+            "url": link,
+            "published_at": published or datetime.now(timezone.utc).isoformat(),
+        })
 
     return articles
 
@@ -345,25 +312,15 @@ def main():
         all_fetched.extend(articles)
         by_source_counts[source_name] = len(articles)
 
-    # 1b. Сбор новостей из GDELT DOC 2.0 (доп. источник наравне с RSS)
-    if GDELT_PROXIES:
-        print("GDELT: используется SOCKS5-прокси (GDELT_SOCKS5_PROXY задан)")
-    else:
-        print(
-            "  [!] GDELT: GDELT_SOCKS5_PROXY не задан — запросы пойдут напрямую с IP раннера "
-            "и скорее всего получат 429 (IP-пул GitHub Actions у GDELT в лимите)",
-            file=sys.stderr,
-        )
-    gdelt_sources = list(GDELT_QUERIES.items())
-    for i, (source_name, query) in enumerate(gdelt_sources):
+    # 1b. Дополнительный сбор через GDELT (мировое покрытие на разных языках).
+    # Это дополнение поверх RSS, а не замена — при сбоях GDELT пайплайн
+    # просто продолжает работать на данных от RSS-источников.
+    for source_name, query in GDELT_QUERIES.items():
         print(f"Fetching {source_name} ...")
         articles = fetch_gdelt(source_name, query)
         print(f"  -> {len(articles)} статей получено")
         all_fetched.extend(articles)
         by_source_counts[source_name] = len(articles)
-        # Пауза перед следующим запросом к GDELT, чтобы не упереться в rate limit
-        if i < len(gdelt_sources) - 1:
-            time.sleep(GDELT_REQUEST_DELAY)
 
     new_count = save_new_articles(conn, all_fetched)
     print(f"Новых статей сохранено в базу: {new_count}")
