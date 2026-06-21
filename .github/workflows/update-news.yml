@@ -2,9 +2,8 @@ name: Update News
 
 on:
   schedule:
-    # Запуск каждый час в начале часа (UTC)
     - cron: "0 * * * *"
-  workflow_dispatch: {}  # позволяет запускать вручную из вкладки Actions
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -36,7 +35,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: pipeline/news.db
-          key: news-db-${{ github.run_id }}
+          key: news-db-static
           restore-keys: |
             news-db-
 
@@ -46,6 +45,13 @@ jobs:
           OPENMODEL_BASE_URL: ${{ secrets.OPENMODEL_BASE_URL }}
           OPENMODEL_MODEL: ${{ secrets.OPENMODEL_MODEL }}
         run: python pipeline/run.py
+
+      - name: Show diff (debug)
+        run: |
+          echo "--- git status ---"
+          git status
+          echo "--- git diff data.json (stat) ---"
+          git diff --stat data.json || true
 
       - name: Commit and push data.json
         run: |
