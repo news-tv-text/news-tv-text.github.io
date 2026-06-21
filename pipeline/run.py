@@ -314,9 +314,7 @@ def fetch_gdelt_cloud(source_name, query_params):
             })
 
     return articles
-
-
-   def save_new_articles(conn, articles):
+def save_new_articles(conn, articles):
     """Сохраняет новые статьи в базу (по url), возвращает кол-во реально новых."""
     now = datetime.now(timezone.utc).isoformat()
     new_count = 0
