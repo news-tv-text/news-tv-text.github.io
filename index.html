@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEWS TV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="crt">
+  <div class="screen">
+    <div class="header">
+      <span class="title">NEWS TV</span>
+      <span class="time" id="time">--:--:--</span>
+    </div>
+    <div class="subheader">
+      <span class="subtitle">text television // news digest</span>
+      <span class="update-info" id="updateInfo"></span>
+    </div>
+
+    <div class="nav">
+      <button class="nav-btn active" data-page="headlines">[1] Сводка</button>
+      <button class="nav-btn" data-page="connections">[2] Связи</button>
+      <button class="nav-btn" data-page="insights">[3] Инсайты</button>
+      <button class="nav-btn" data-page="articles">[4] Лента</button>
+    </div>
+
+    <div class="content" id="content">
+      <div class="loading">[ загрузка данных... ]</div>
+    </div>
+
+    <div class="footer" id="footer">
+      <span class="footer-left">PIPELINE: --</span>
+      <span class="footer-center">ARTICLES: --</span>
+      <span class="footer-right">PAGE 01/04</span>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

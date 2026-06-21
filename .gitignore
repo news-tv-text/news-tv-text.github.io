@@ -1,0 +1,5 @@
+pipeline/news.db
+pipeline/output/
+__pycache__/
+*.pyc
+.python-version
