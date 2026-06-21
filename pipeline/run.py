@@ -177,7 +177,15 @@ def call_llm(articles):
         messages=[{"role": "user", "content": prompt}],
     )
 
-    return message.content[0].text
+    # Некоторые модели (например, с режимом "thinking") возвращают несколько
+    # блоков контента, где первый — ThinkingBlock (рассуждения), а не текст.
+    # Поэтому ищем именно текстовый блок, а не берём content[0] вслепую.
+    for block in message.content:
+        if getattr(block, "type", None) == "text":
+            return block.text
+
+    # На случай неожиданного формата ответа — лучше явная ошибка, чем тихий сбой.
+    raise RuntimeError(f"В ответе LLM не найден текстовый блок: {message.content!r}")
 
 
 def main():
