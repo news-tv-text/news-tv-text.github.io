@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-25T22:01",
+  "updated_at": "2026-07-25T23:06",
   "stats": {
-    "total_articles": 24526,
+    "total_articles": 24575,
     "analyzed": 30,
     "digests": 1,
     "by_source": {
@@ -17,9 +17,9 @@
       "DW (Германия)": 20,
       "Times of India": 20,
       "AllAfrica": 20,
-      "GDELT: Россия/СНГ (rus)": 20,
-      "GDELT: Китай (zho)": 20,
-      "GDELT: Латинская Америка (spa)": 0,
+      "GDELT: Россия/СНГ (rus)": 0,
+      "GDELT: Китай (zho)": 0,
+      "GDELT: Латинская Америка (spa)": 20,
       "GDELT: Ближний Восток (ara)": 0,
       "GDELT Cloud: Европа": 0,
       "GDELT Cloud: Азия": 0,
@@ -30,128 +30,128 @@
   },
   "analysis": {
     "text": "Вот аналитический обзор новостного дайджеста, составленный по заданной структуре.\n\n### 1. КЛЮЧЕВЫЕ СОБЫТИЯ\n\n**Массированная угроза БПЛА в Центральной России**\n- **Беспилотная опасность** объявлена в шести регионах: Волгоградской, Пензенской, Ярославской, Костромской, Владимирской областях и Мордовии. Это волна предупреждений, охватившая обширную территорию от юга до центра России.\n\n**Паралич региональной авиации**\n- Введены временные ограничения на работу аэропортов **Иваново**, **Ярославля** и **Череповца**. Крупнейший московский хаб **Домодедово** перешел на режим «по согласованию» (фактически — работа с перебоями).\n\n**Эскалация в Харьковской области и контроль МАГАТЭ**\n- В Харьковской области прогремели **взрывы**.\n- МАГАТЭ заявило о мониторинге ситуации, чтобы Киев **не использовал британский уран в военных целях**, что указывает на риск применения «грязной бомбы» или ядерных материалов.\n\n**Рекорды ЧМ-2022 и контракты в НХЛ**\n- **Эрлинг Холанд** (Норвегия) установил достижение, забив 7 голов на дебютном ЧМ — первый случай за 52 года.\n- **Неймар** вошел в элитарный клуб, сравнявшись с Пеле по голам на четырех мундиалях.\n- **Егор Чинахов** подписал трехлетний контракт с «Питтсбург Пингвинз».\n\n**Внутренние социальные и законодательные инициативы**\n- Госдума предложила **освободить от налогов** продажу собранных в лесу грибов и ягод (при определенных условиях).\n- Депутаты также готовят закон об обязательном направлении копий решений по административным делам потерпевшим.\n- **Треть работающих россиян** не брали больничный в течение года (данные аналитиков).\n\n**Международные инциденты и логистика**\n- В Калифорнии (США) после Дня независимости **арестовано более 400 человек**.\n- Австралийский премьер **извинился** за неудачную шутку о певице Кайли Миноуг.\n- **15 из 20 судов с удобрениями** освобождены из-под ареста в Ормузском проливе — сигнал о разрядке в цепочках поставок продовольствия.\n\n### 2. СВЯЗИ МЕЖДУ РЕГИОНАМИ\n\n- **БПЛА и логистический коллапс.** Прямая причинно-следственная связь: объявление беспилотной опасности в **Ярославской, Владимирской, Костромской** областях привело к введению временных ограничений в аэропортах **Иваново, Ярославля и Череповца**. Домодедово, находясь в Московской области, перешел на усиленный режим как реакция на общую угрозу в ЦФО.\n- **Украинский фронт и ядерная безопасность.** Взрывы в **Харьковской области** на фоне заявлений МАГАТЭ о британском уране формируют единый контекст: риск тактического применения радиоактивных материалов в зоне конфликта. Контроль агентства напрямую увязан с эскалацией на востоке Украины.\n- **Глобальный рынок удобрений.** Разблокировка судов в **Ормузском проливе** (Иран/ОАЭ) логически связана с продовольственной безопасностью РФ и мира. На фоне внутренних инициатив (налог на грибы) эта новость показывает контраст: РФ стимулирует сбор дикоросов, а глобальный Юг размораживает поставки химудобрений.\n- **Спорт как зеркало депопуляции?** На фоне позитивных спортивных рекордов (Холанд, Неймар, Чинахов) новость о том, что **треть россиян не ходят на больничный**, может указывать либо на высокую производительность, либо (что вероятнее) на страх потери дохода и дефицит кадров — скрытый кризис на рынке труда.\n\n### 3. ПАТТЕРНЫ И ТРЕНДЫ\n\n- **Пространственный паттерн «кольцо угрозы».** Угроза БПЛА охватила практически все регионы **Верхнего Поволжья** (Ярославская, Костромская, Владимирская, Ивановская) плюс южный фланг (Волгоградская) и Мордовию. Это не точечные инциденты, а **системное давление на транспортную инфраструктуру центральной части РФ**.\n- **Дублирование информации разными источниками.** Заголовки о БПЛА и закрытии аэропортов повторяются у ТАСС, РИА Новости и Интерфакса почти дословно. Это говорит о **высокой степени тревожности** редакций и стремлении максимально быстро продублировать экстренную информацию, а также об отсутствии новых фактов после первого сообщения.\n- **Сезонный и ситуационный тренд в США.** Аресты более 400 человек в Калифорнии после Дня независимости — повторяющийся ежегодный паттерн (массовые задержания после праздничных беспорядков) на фоне общего роста преступности в мегаполисах США.\n- **Сдвиг в трудовой этике.** Данные о том, что треть россиян не берут больничные, коррелируют с трендом на «присутствие любой ценой» (presenteeism). Это может быть следствием ужесточения контроля (закон об административных делах — смежный сигнал) или неформальной занятости.\n\n### 4. НЕОЖИДАННЫЕ ИНСАЙТЫ\n\n- **«Эбола» на фоне БПЛА.** Новость о возможном длительном выявлении вируса Эболы у переболевших (до полугода) резко контрастирует с военно-технической повесткой. Это может быть отложенным инфоповодом, готовящим общественное мнение к возможным **биологическим угрозам** в зоне СВО или тропических регионах, куда перемещается логистика РФ.\n- **Контраст «грибы-ракеты».** Законопроект о безналоговой продаже грибов выглядит почти иронично на фоне закрытых аэропортов и беспилотной опасности. Создается образ двойственности: власть стимулирует население к **«натуральному хозяйству»** и выживанию, одновременно перекрывая транспортные артерии.\n- **«Серп и Молот» как символ.** Отмена остановки поездов МЦД-4 на станции с советской символикой «Серп и Молот» (с 6 июля) случайно совпадает по времени с волной БПЛА. Символическая «пролетка без остановки» мимо коммунистического символа может быть прочитана как метафора **прощания с эпохой безопасности** или военно-административного транзита.\n- **Тишина в небе vs голос в эфире.** Глава Тувы обещает оперативно сообщать о поисках пропавших девочек — это единичная гуманитарная новость на фоне массы «жестких» сообщений. Она обнажает тревожное противоречие: пока одни регионы парализованы дронами, в других ищут детей, и государство гарантирует лишь **информационное сопровождение**, а не физическую защиту.",
-    "created_at": "2026-07-25 22:01:43"
+    "created_at": "2026-07-25 23:06:23"
   },
   "recent_articles": [
     {
-      "source": "ТАСС",
-      "title": "Военные США высадились для досмотра на танкер в Аравийском море",
-      "url": "https://tass.ru/mezhdunarodnaya-panorama/27952921",
-      "published_at": "2026-07-25T21:53:01+00:00"
+      "source": "GDELT: Латинская Америка (spa) (eldeber.com.bo)",
+      "title": "JP Velasco pide apoyo de Yapacaní a la propuesta del 50 / 50",
+      "url": "https://eldeber.com.bo/santa-cruz/jp-velasco-pide-apoyo-yapacani-propuesta-50-50_1785010660",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "РИА Новости",
-      "title": "Кэти Перри возмутилась, что Белый дом использовал ее трек",
-      "url": "https://ria.ru/20260726/perri-2107014563.html",
-      "published_at": "2026-07-25T21:51:43+00:00"
+      "source": "GDELT: Латинская Америка (spa) (elperiodico.com)",
+      "title": "Morrissey , solo ante el fin del mundo , en un electrizante cierre del Barts Festival",
+      "url": "https://www.elperiodico.com/es/ocio-y-cultura/20260725/morrissey-solo-ante-fin-mundo-electrizante-cierre-barts-festival-132812164",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "РИА Новости",
-      "title": "Белоусов поздравил моряков с днем ВМФ",
-      "url": "https://ria.ru/20260726/vmf-2107014376.html",
-      "published_at": "2026-07-25T21:51:05+00:00"
+      "source": "GDELT: Латинская Америка (spa) (bitacora.com.uy)",
+      "title": "Habituado en políticas de Harvard advierte que el real costo de la exterminio de Irán para los contribuyentes estadounidenses superará el billón de dólares",
+      "url": "https://bitacora.com.uy/habituado-en-politicas-de-harvard-advierte-que-el-real-costo-de-la-exterminio-de-iran-para-los-contribuyentes-estadounidenses-superara-el-billon-de-dolares/",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "Интерфакс",
-      "title": "Почти 30 поездов задерживаются из-за непогоды в Ростовской области",
-      "url": "https://www.interfax.ru/russia/1105614",
-      "published_at": "2026-07-25T21:50:00+00:00"
+      "source": "GDELT: Латинская Америка (spa) (eju.tv)",
+      "title": "¡ Basta de violencia ! 500 líderes estudiantiles presentan propuestas de prevención",
+      "url": "https://eju.tv/2026/07/basta-de-violencia-500-lideres-estudiantiles-presentan-propuestas-de-prevencion/",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "РИА Новости",
-      "title": "Цены на красную икру в России снизились",
-      "url": "https://ria.ru/20260726/ikra-2107014134.html",
-      "published_at": "2026-07-25T21:46:43+00:00"
+      "source": "GDELT: Латинская Америка (spa) (exitoina.perfil.com)",
+      "title": "Gastón Edul peleó en La Velada del Año VI , fue silbado por los españoles y lanzó un contundente mensaje :  Esto a los argentinos nos gusta",
+      "url": "https://exitoina.perfil.com/noticias/destacada/gaston-edul-peleo-la-velada-del-ano-vi-fue-silbado-espanoles-contundente-mensaje-esto-a-los-argentinos-nos-gusta.phtml",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "Times of India",
-      "title": "Pralhad Joshi, man with a low profile &amp; an effective style",
-      "url": "https://timesofindia.indiatimes.com/india/pralhad-joshi-man-with-a-low-profile-an-effective-style/articleshow/132633408.cms",
-      "published_at": "2026-07-25T21:44:33+00:00"
+      "source": "GDELT: Латинская Америка (spa) (publico.es)",
+      "title": "Una ópera en Badajoz",
+      "url": "https://www.publico.es/opinion/opera-badajoz.html",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "РИА Новости",
-      "title": "Кадыров анонсировал крупную гуманитарную помощь в секторе Газа",
-      "url": "https://ria.ru/20260726/sektorgaza-2107013946.html",
-      "published_at": "2026-07-25T21:44:10+00:00"
+      "source": "GDELT: Латинская Америка (spa) (tn.com.ar)",
+      "title": "Cómo salió la pelea de Angie Velasco vs . Alondrissa en la Velada del Año 6",
+      "url": "https://tn.com.ar/show/famosos/2026/07/25/angie-velasco-gano-la-pelea-contra-alondrissa-en-la-velada-del-ano-6/",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "ТАСС",
-      "title": "Как минимум один человек погиб из-за наезда автомобиля на толпу людей в Берлине",
-      "url": "https://tass.ru/proisshestviya/27952919",
-      "published_at": "2026-07-25T21:42:13+00:00"
+      "source": "GDELT: Латинская Америка (spa) (elperiodico.com)",
+      "title": "Dellafuente sirve un gran banquete de ritmos latinos sobre el escenario del Share Festival en una actuación cancelada por las fuertes lluvias",
+      "url": "https://www.elperiodico.com/es/ocio-y-cultura/20260725/dellafuente-sirve-gran-banquete-ritmos-132811179",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "РИА Новости",
-      "title": "Обломки беспилотников упали в станице на Кубани, пострадавших нет",
-      "url": "https://ria.ru/20260726/bezopasnost-2107013796.html",
-      "published_at": "2026-07-25T21:42:07+00:00"
+      "source": "GDELT: Латинская Америка (spa) (ellitoral.com)",
+      "title": "Santa Fe FC ganó , goleó , gustó y se consagró campeón del Apertura 2026",
+      "url": "https://www.ellitoral.com/pasion-liga-santafesina/liga-primera-futbol-goles_0_eOQwVNWkl7.html",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "ТАСС",
-      "title": "Фридман инициировал арбитраж против Нидерландов из-за санкций",
-      "url": "https://tass.ru/ekonomika/27952917",
-      "published_at": "2026-07-25T21:40:25+00:00"
+      "source": "GDELT: Латинская Америка (spa) (eldiario.es)",
+      "title": "La Generalitat Valenciana reconoce que su abandono de la residencia de Machado en Rocafort la puso en riesgo de  daños irreparables",
+      "url": "https://www.eldiario.es/comunitat-valenciana/generalitat-valenciana-reconoce-abandono-residencia-machado-rocafort-puso-riesgo-danos-irreparables_1_13404810.html",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "ТАСС",
-      "title": "Эксперт Подчиненова назвала норму употребления кваса в день",
-      "url": "https://tass.ru/obschestvo/27952913",
-      "published_at": "2026-07-25T21:39:32+00:00"
+      "source": "GDELT: Латинская Америка (spa) (deperu.com)",
+      "title": "Video : Este lunes llegan presidentes para toma de mando de Keiko Fujimori por 24 Horas",
+      "url": "https://www.deperu.com/tv/s2pWmd5sdfE.este-lunes-llegan-presidentes-para-toma-de-mando-de-keiko-fujimori.UCsakKsRww3J7pM6DavkrAIQ.html",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "РИА Новости",
-      "title": "В Роспотребнадзоре рассказали, как выбрать качественный квас",
-      "url": "https://ria.ru/20260726/kvas-2107013628.html",
-      "published_at": "2026-07-25T21:37:36+00:00"
+      "source": "GDELT: Латинская Америка (spa) (elmundo.es)",
+      "title": "Hungría acelera el desmontaje del  Estado - partido  que cosió Orban",
+      "url": "https://www.elmundo.es/internacional/2026/07/25/6a63baa321efa006198b459e.html",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "ТАСС",
-      "title": "Вулкан Шивелуч выбросил пепел",
-      "url": "https://tass.ru/proisshestviya/27952915",
-      "published_at": "2026-07-25T21:37:15+00:00"
+      "source": "GDELT: Латинская Америка (spa) (critica.com.pa)",
+      "title": "Panamá y Costa Rica activan operativo conjunto contra el dengue",
+      "url": "https://www.critica.com.pa/nacional/panama-y-costa-rica-activan-operativo-conjunto-contra-el-dengue-513469",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "РИА Новости",
-      "title": "Пострадавшего россиянина эвакуируют на вертолете с гор Памира",
-      "url": "https://ria.ru/20260726/pamir-2107013454.html",
-      "published_at": "2026-07-25T21:35:53+00:00"
+      "source": "GDELT: Латинская Америка (spa) (colombia.com)",
+      "title": "Resultado Paisita Día de hoy : último sorteo del sábado 25 de julio de 2026",
+      "url": "https://www.colombia.com/loterias/paisita-dia-resultado-de-hoy-sabado-25-de-julio-de-2026-593430",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "Times of India",
-      "title": "Congress was wary of CJP but later joined it in hailing victory",
-      "url": "https://timesofindia.indiatimes.com/india/congress-was-wary-of-cjp-but-later-joined-it-in-hailing-victory/articleshow/132633403.cms",
-      "published_at": "2026-07-25T21:35:12+00:00"
+      "source": "GDELT: Латинская Америка (spa) (ellitoral.com)",
+      "title": "Aseguran que La Joaqui y Luck Ra atraviesan una profunda crisis de pareja",
+      "url": "https://www.ellitoral.com/show/aseguran-joaqui-luckra-atraviesan-profunda-crisis_0_nEKTv1o3rP.html",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "DW (Германия)",
-      "title": "Berlin pride event canceled after vehicle drives into crowd",
-      "url": "https://www.dw.com/en/berlin-pride-event-canceled-after-vehicle-drives-into-crowd/a-78116146?maca=en-rss-en-all-1573-rdf",
-      "published_at": "2026-07-25T21:34:00+00:00"
+      "source": "GDELT: Латинская Америка (spa) (eldiario.es)",
+      "title": "La fosa que ha llevado al alcalde de Aínsa , en Huesca , hasta Soria : la familia recupera los restos del bisabuelo , asesinado en 1936",
+      "url": "https://www.eldiario.es/aragon/sociedad/fosa-llevado-alcalde-ainsa-huesca-soria-familia-recupera-restos-bisabuelo-asesinado-1936_1_13406288.html",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "ТАСС",
-      "title": "Белоусов поздравил военнослужащих с Днем ВМФ",
-      "url": "https://tass.ru/armiya-i-opk/27952911",
-      "published_at": "2026-07-25T21:33:04+00:00"
+      "source": "GDELT: Латинская Америка (spa) (altadensidad.com)",
+      "title": "🙃 Un misterioso hacker ruso está penetrando miles de routers vulnerables de desconocidos para arreglar la falla",
+      "url": "https://altadensidad.com/un-misterioso-hacker-ruso-esta-penetrando-miles-de-routers-vulnerables-de-desconocidos-para-arreglar-la-falla/",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "BBC World",
-      "title": "Several injured at Berlin Pride after reports vehicle drove into crowd, police say",
-      "url": "https://www.bbc.co.uk/news/articles/clyqzylz3zno?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-07-25T21:33:00+00:00"
+      "source": "GDELT: Латинская Америка (spa) (sandiegored.com)",
+      "title": "Autoridades en Tijuana exhortan a ciudadanía a reforzar medidas de seguridad en albercas y balnearios",
+      "url": "https://www.sandiegored.com/noticia/autoridades-en-tijuana-exhortan-a-ciudadania-a-reforzar-medidas-de-seguridad-en-albercas-y-balnearios/",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "РИА Новости",
-      "title": "Росстандарт перечислил требования к собакам-поводырям по ГОСТу",
-      "url": "https://ria.ru/20260726/sobaki-2107013239.html",
-      "published_at": "2026-07-25T21:32:52+00:00"
+      "source": "GDELT: Латинская Америка (spa) (colombia.com)",
+      "title": "Revelan los planes de Gustavo Petro después del 7 de agosto : vacaciones , oposición y agenda política",
+      "url": "https://www.colombia.com/actualidad/nacionales/gustavo-petro-alista-su-salida-de-la-presidencia-y-estos-serian-sus-planes-tras-el-7-de-agosto-593443",
+      "published_at": "2026-07-25T23:00:00+00:00"
     },
     {
-      "source": "РИА Новости",
-      "title": "В Киеве прогремели взрывы",
-      "url": "https://ria.ru/20260726/kiev-2107013086.html",
-      "published_at": "2026-07-25T21:31:39+00:00"
+      "source": "GDELT: Латинская Америка (spa) (abc.com.py)",
+      "title": "Taiwán ampliará con US$ 200 millones el financiamiento de Che Róga Porã , anunció su embajador - Economía",
+      "url": "https://www.abc.com.py/economia/2026/07/25/taiwan-ampliara-con-us-200-millones-el-financiamiento-de-che-roga-pora-anuncio-su-embajador/",
+      "published_at": "2026-07-25T23:00:00+00:00"
     }
   ]
 }
