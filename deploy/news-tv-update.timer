@@ -1,0 +1,14 @@
+[Unit]
+Description=News TV: ежечасный запуск обновления data.json
+
+[Timer]
+# Аналог cron "0 * * * *" из GitHub Actions.
+OnCalendar=hourly
+# Небольшой разброс, чтобы не долбить RSS-источники ровно в 00 минут.
+RandomizedDelaySec=180
+# Догнать пропущенный запуск, если VPS был выключен или перезагружался.
+Persistent=true
+Unit=news-tv-update.service
+
+[Install]
+WantedBy=timers.target

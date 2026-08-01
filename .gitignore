@@ -1,4 +1,5 @@
 pipeline/news.db
+.venv/
 pipeline/output/
 __pycache__/
 *.pyc

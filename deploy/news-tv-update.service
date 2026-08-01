@@ -1,0 +1,19 @@
+[Unit]
+Description=News TV: обновление data.json
+Documentation=https://github.com/news-tv-text/news-tv-text.github.io
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=newstv
+Group=newstv
+WorkingDirectory=/opt/news-tv
+ExecStart=/opt/news-tv/deploy/update-news.sh
+# Секреты лежат в /etc/news-tv/news-tv.env — его читает сам скрипт.
+Environment=ENV_FILE=/etc/news-tv/news-tv.env
+Environment=BRANCH=main
+TimeoutStartSec=30min
+
+[Install]
+WantedBy=multi-user.target
