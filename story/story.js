@@ -454,8 +454,8 @@ function lampFlicker() {
 
 async function boot() {
   load();
-  const res = await fetch('content.json', { cache: 'no-cache' });
-  C = await res.json();
+  // В однофайловой сборке (превью) контент уже лежит в странице
+  C = window.__CONTENT__ || await (await fetch('content.json', { cache: 'no-cache' })).json();
   C.chapters.forEach((ch) => chapterByPage.set(ch.page, ch));
 
   el.chan.textContent = C.channel;
