@@ -1,0 +1,104 @@
+name: Deploy story
+
+# Выкладывает раздел story/ на свой сервер по SSH.
+# Ключ и адрес лежат в Secrets репозитория, в коде их нет:
+#   DEPLOY_HOST         — хост или IP
+#   DEPLOY_USER         — пользователь
+#   DEPLOY_PATH         — каталог назначения, например /var/www/lunevo/story
+#   DEPLOY_SSH_KEY      — приватный ключ целиком, включая строки BEGIN/END
+#   DEPLOY_PORT         — порт SSH, необязательно (по умолчанию 22)
+#   DEPLOY_KNOWN_HOSTS  — строка из known_hosts, необязательно, но желательно:
+#                         без неё ключ хоста берётся на доверии при первом заходе
+# Пока секреты не заданы, workflow не падает, а сообщает, что деплой пропущен.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "story/**"
+      - "stories/**"
+      - ".github/workflows/deploy-story.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-story
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Проверить, что content.json собран из рукописи
+        run: |
+          python3 stories/build_content.py
+          if ! git diff --quiet -- story/content.json; then
+            echo "::error::story/content.json разошёлся с рукописью. Запустите python3 stories/build_content.py и закоммитьте результат."
+            git --no-pager diff -- story/content.json | head -40
+            exit 1
+          fi
+
+      - name: Проверить, заданы ли секреты
+        id: check
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          if [ -z "$DEPLOY_HOST" ] || [ -z "$DEPLOY_USER" ] || [ -z "$DEPLOY_PATH" ] || [ -z "$DEPLOY_SSH_KEY" ]; then
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Деплой пропущен: не заданы DEPLOY_HOST / DEPLOY_USER / DEPLOY_PATH / DEPLOY_SSH_KEY."
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Подготовить SSH
+        if: steps.check.outputs.ready == 'true'
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          if [ -n "$DEPLOY_KNOWN_HOSTS" ]; then
+            printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          else
+            ssh-keyscan -p "${DEPLOY_PORT:-22}" -H "$DEPLOY_HOST" > ~/.ssh/known_hosts 2>/dev/null
+            echo "::warning::DEPLOY_KNOWN_HOSTS не задан — ключ хоста принят на доверии."
+          fi
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Выложить story/ на сервер
+        if: steps.check.outputs.ready == 'true'
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+        run: |
+          # --delete намеренно не включён: если DEPLOY_PATH укажет не туда,
+          # rsync снесёт чужие файлы. Добавьте флаг, когда путь проверен.
+          rsync -rlpcz --human-readable \
+            --exclude 'preview.html' \
+            -e "ssh -i ~/.ssh/id_deploy -p ${DEPLOY_PORT:-22} -o IdentitiesOnly=yes" \
+            story/ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/"
+
+      - name: Убрать ключ
+        if: always()
+        run: rm -f ~/.ssh/id_deploy
