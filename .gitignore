@@ -3,3 +3,6 @@ pipeline/output/
 __pycache__/
 *.pyc
 .python-version
+bot/state.json
+__pycache__/
+story/preview.html

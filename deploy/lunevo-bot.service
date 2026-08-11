@@ -1,0 +1,35 @@
+; systemd-юнит для телеграм-бота. Положить в /etc/systemd/system/lunevo-bot.service
+;
+;   systemctl daemon-reload
+;   systemctl enable --now lunevo-bot
+;   journalctl -u lunevo-bot -f
+;
+; Токен лежит в /etc/lunevo-bot.env (chmod 600), а не в этом файле:
+;   BOT_TOKEN=123456:AA...
+;   SITE_URL=https://пример/story/
+
+[Unit]
+Description=ТВ-Лунево — бот ночного телетекста
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=lunevo
+Group=lunevo
+WorkingDirectory=/opt/lunevo
+EnvironmentFile=/etc/lunevo-bot.env
+Environment=STATE_FILE=/var/lib/lunevo/state.json
+ExecStart=/opt/lunevo/venv/bin/python /opt/lunevo/bot/bot.py
+Restart=always
+RestartSec=5
+
+; Бот пишет только свой файл прогресса — остальное закрыто
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/lunevo
+
+[Install]
+WantedBy=multi-user.target

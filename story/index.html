@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ТВ-ЛУНЕВО // ТЕЛЕТЕКСТ 214</title>
+<meta name="description" content="Лампы через одну — телетекст-квест. Ночной эфир ТВ-Лунево, ноябрь 2003.">
+<meta name="theme-color" content="#0a0d0a">
+<link rel="stylesheet" href="story.css">
+</head>
+<body>
+
+<div class="crt" id="crt">
+  <canvas class="static" id="static" aria-hidden="true"></canvas>
+
+  <div class="screen" id="screen">
+
+    <header class="head">
+      <span class="chan" id="chan">ТВ-ЛУНЕВО</span>
+      <span class="lamps" id="lamps" title="лампы в коридоре">ЛАМПЫ 14</span>
+      <span class="pageno" id="pageno">---</span>
+    </header>
+
+    <div class="subhead">
+      <span id="subtitle">телетекст // ночной эфир</span>
+      <span id="clock">--:--</span>
+    </div>
+
+    <main class="page" id="page" tabindex="-1" aria-live="polite"></main>
+
+    <div class="anchor" id="anchor"></div>
+
+    <footer class="foot">
+      <div class="tickerbox">
+        <div class="tickerline" id="ticker"></div>
+      </div>
+
+      <div class="controls">
+        <div class="entry">
+          <span class="lbl">СТРАНИЦА</span>
+          <span class="digits" id="digits">___</span>
+        </div>
+        <div class="btns">
+          <button class="key" data-act="prev">◀ НАЗАД</button>
+          <button class="key" data-act="next">ДАЛЬШЕ ▶</button>
+          <button class="key" data-act="index">100</button>
+          <button class="key" data-act="found">300</button>
+          <button class="key" data-act="sound" id="sndbtn">ЗВУК ВЫКЛ</button>
+          <button class="key" data-act="pad">ЦИФРЫ</button>
+        </div>
+      </div>
+
+      <div class="pad" id="pad" hidden>
+        <button class="padkey" data-d="1">1</button><button class="padkey" data-d="2">2</button><button class="padkey" data-d="3">3</button>
+        <button class="padkey" data-d="4">4</button><button class="padkey" data-d="5">5</button><button class="padkey" data-d="6">6</button>
+        <button class="padkey" data-d="7">7</button><button class="padkey" data-d="8">8</button><button class="padkey" data-d="9">9</button>
+        <button class="padkey" data-act="clear">СБР</button><button class="padkey" data-d="0">0</button><button class="padkey" data-act="pad">✕</button>
+      </div>
+    </footer>
+
+  </div>
+</div>
+
+<script src="story.js"></script>
+</body>
+</html>
