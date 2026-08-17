@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-17T03:04",
+  "updated_at": "2026-08-17T04:46",
   "stats": {
-    "total_articles": 59267,
+    "total_articles": 59393,
     "analyzed": 30,
     "digests": 1,
     "by_source": {
@@ -17,10 +17,10 @@
       "DW (Германия)": 20,
       "Times of India": 20,
       "AllAfrica": 20,
-      "GDELT: Россия/СНГ (rus)": 20,
+      "GDELT: Россия/СНГ (rus)": 0,
       "GDELT: Китай (zho)": 20,
-      "GDELT: Латинская Америка (spa)": 20,
-      "GDELT: Ближний Восток (ara)": 0,
+      "GDELT: Латинская Америка (spa)": 0,
+      "GDELT: Ближний Восток (ara)": 20,
       "GDELT Cloud: Европа": 0,
       "GDELT Cloud: Азия": 0,
       "GDELT Cloud: Ближний Восток": 0,
@@ -30,128 +30,128 @@
   },
   "analysis": {
     "text": "Вот аналитический обзор новостного дайджеста, составленный по заданной структуре.\n\n### 1. КЛЮЧЕВЫЕ СОБЫТИЯ\n\n**Массированная угроза БПЛА в Центральной России**\n- **Беспилотная опасность** объявлена в шести регионах: Волгоградской, Пензенской, Ярославской, Костромской, Владимирской областях и Мордовии. Это волна предупреждений, охватившая обширную территорию от юга до центра России.\n\n**Паралич региональной авиации**\n- Введены временные ограничения на работу аэропортов **Иваново**, **Ярославля** и **Череповца**. Крупнейший московский хаб **Домодедово** перешел на режим «по согласованию» (фактически — работа с перебоями).\n\n**Эскалация в Харьковской области и контроль МАГАТЭ**\n- В Харьковской области прогремели **взрывы**.\n- МАГАТЭ заявило о мониторинге ситуации, чтобы Киев **не использовал британский уран в военных целях**, что указывает на риск применения «грязной бомбы» или ядерных материалов.\n\n**Рекорды ЧМ-2022 и контракты в НХЛ**\n- **Эрлинг Холанд** (Норвегия) установил достижение, забив 7 голов на дебютном ЧМ — первый случай за 52 года.\n- **Неймар** вошел в элитарный клуб, сравнявшись с Пеле по голам на четырех мундиалях.\n- **Егор Чинахов** подписал трехлетний контракт с «Питтсбург Пингвинз».\n\n**Внутренние социальные и законодательные инициативы**\n- Госдума предложила **освободить от налогов** продажу собранных в лесу грибов и ягод (при определенных условиях).\n- Депутаты также готовят закон об обязательном направлении копий решений по административным делам потерпевшим.\n- **Треть работающих россиян** не брали больничный в течение года (данные аналитиков).\n\n**Международные инциденты и логистика**\n- В Калифорнии (США) после Дня независимости **арестовано более 400 человек**.\n- Австралийский премьер **извинился** за неудачную шутку о певице Кайли Миноуг.\n- **15 из 20 судов с удобрениями** освобождены из-под ареста в Ормузском проливе — сигнал о разрядке в цепочках поставок продовольствия.\n\n### 2. СВЯЗИ МЕЖДУ РЕГИОНАМИ\n\n- **БПЛА и логистический коллапс.** Прямая причинно-следственная связь: объявление беспилотной опасности в **Ярославской, Владимирской, Костромской** областях привело к введению временных ограничений в аэропортах **Иваново, Ярославля и Череповца**. Домодедово, находясь в Московской области, перешел на усиленный режим как реакция на общую угрозу в ЦФО.\n- **Украинский фронт и ядерная безопасность.** Взрывы в **Харьковской области** на фоне заявлений МАГАТЭ о британском уране формируют единый контекст: риск тактического применения радиоактивных материалов в зоне конфликта. Контроль агентства напрямую увязан с эскалацией на востоке Украины.\n- **Глобальный рынок удобрений.** Разблокировка судов в **Ормузском проливе** (Иран/ОАЭ) логически связана с продовольственной безопасностью РФ и мира. На фоне внутренних инициатив (налог на грибы) эта новость показывает контраст: РФ стимулирует сбор дикоросов, а глобальный Юг размораживает поставки химудобрений.\n- **Спорт как зеркало депопуляции?** На фоне позитивных спортивных рекордов (Холанд, Неймар, Чинахов) новость о том, что **треть россиян не ходят на больничный**, может указывать либо на высокую производительность, либо (что вероятнее) на страх потери дохода и дефицит кадров — скрытый кризис на рынке труда.\n\n### 3. ПАТТЕРНЫ И ТРЕНДЫ\n\n- **Пространственный паттерн «кольцо угрозы».** Угроза БПЛА охватила практически все регионы **Верхнего Поволжья** (Ярославская, Костромская, Владимирская, Ивановская) плюс южный фланг (Волгоградская) и Мордовию. Это не точечные инциденты, а **системное давление на транспортную инфраструктуру центральной части РФ**.\n- **Дублирование информации разными источниками.** Заголовки о БПЛА и закрытии аэропортов повторяются у ТАСС, РИА Новости и Интерфакса почти дословно. Это говорит о **высокой степени тревожности** редакций и стремлении максимально быстро продублировать экстренную информацию, а также об отсутствии новых фактов после первого сообщения.\n- **Сезонный и ситуационный тренд в США.** Аресты более 400 человек в Калифорнии после Дня независимости — повторяющийся ежегодный паттерн (массовые задержания после праздничных беспорядков) на фоне общего роста преступности в мегаполисах США.\n- **Сдвиг в трудовой этике.** Данные о том, что треть россиян не берут больничные, коррелируют с трендом на «присутствие любой ценой» (presenteeism). Это может быть следствием ужесточения контроля (закон об административных делах — смежный сигнал) или неформальной занятости.\n\n### 4. НЕОЖИДАННЫЕ ИНСАЙТЫ\n\n- **«Эбола» на фоне БПЛА.** Новость о возможном длительном выявлении вируса Эболы у переболевших (до полугода) резко контрастирует с военно-технической повесткой. Это может быть отложенным инфоповодом, готовящим общественное мнение к возможным **биологическим угрозам** в зоне СВО или тропических регионах, куда перемещается логистика РФ.\n- **Контраст «грибы-ракеты».** Законопроект о безналоговой продаже грибов выглядит почти иронично на фоне закрытых аэропортов и беспилотной опасности. Создается образ двойственности: власть стимулирует население к **«натуральному хозяйству»** и выживанию, одновременно перекрывая транспортные артерии.\n- **«Серп и Молот» как символ.** Отмена остановки поездов МЦД-4 на станции с советской символикой «Серп и Молот» (с 6 июля) случайно совпадает по времени с волной БПЛА. Символическая «пролетка без остановки» мимо коммунистического символа может быть прочитана как метафора **прощания с эпохой безопасности** или военно-административного транзита.\n- **Тишина в небе vs голос в эфире.** Глава Тувы обещает оперативно сообщать о поисках пропавших девочек — это единичная гуманитарная новость на фоне массы «жестких» сообщений. Она обнажает тревожное противоречие: пока одни регионы парализованы дронами, в других ищут детей, и государство гарантирует лишь **информационное сопровождение**, а не физическую защиту.",
-    "created_at": "2026-08-17 03:04:38"
+    "created_at": "2026-08-17 04:46:51"
   },
   "recent_articles": [
     {
+      "source": "ТАСС",
+      "title": "Медики рассказали о состоянии пострадавших на пожаре в Омске рабочих",
+      "url": "https://tass.ru/proisshestviya/28017579",
+      "published_at": "2026-08-17T04:41:51+00:00"
+    },
+    {
+      "source": "DW (Германия)",
+      "title": "India: Six dead in Bihar temple stampede",
+      "url": "https://www.dw.com/en/india-six-dead-in-bihar-temple-stampede/a-78390719?maca=en-rss-en-all-1573-rdf",
+      "published_at": "2026-08-17T04:41:00+00:00"
+    },
+    {
       "source": "РИА Новости",
-      "title": "В ГД предложили давать статус многодетных независимо от наличия регистрации",
-      "url": "https://ria.ru/20260817/gosduma-2111267441.html",
-      "published_at": "2026-08-17T02:57:34+00:00"
+      "title": "ВС России сбили более десяти разведывательных дронов ВСУ за неделю",
+      "url": "https://ria.ru/20260817/spetsoperatsiya-2111272065.html",
+      "published_at": "2026-08-17T04:40:28+00:00"
     },
     {
       "source": "ТАСС",
-      "title": "В России разрабатывают новый механизм крыла самолета",
-      "url": "https://tass.ru/nauka/28017439",
-      "published_at": "2026-08-17T02:45:09+00:00"
+      "title": "Командир Зена заявил об уничтожении более 10 БПЛА ВСУ на харьковском направлении",
+      "url": "https://tass.ru/armiya-i-opk/28017603",
+      "published_at": "2026-08-17T04:39:21+00:00"
+    },
+    {
+      "source": "France24",
+      "title": "Trump orders Pentagon to scale back military drills with South Korea, hours before start",
+      "url": "https://www.france24.com/en/americas/20260817-trump-orders-pentagon-to-scale-back-military-drills-with-south-korea-hours-before-start",
+      "published_at": "2026-08-17T04:38:01+00:00"
     },
     {
       "source": "ТАСС",
-      "title": "hh.ru сообщил о росте спроса на специалистов по автоматизации",
-      "url": "https://tass.ru/ekonomika/28017437",
-      "published_at": "2026-08-17T02:43:53+00:00"
+      "title": "В МВД советуют установить в приложении банка ограничение на переводы денег ночью",
+      "url": "https://tass.ru/obschestvo/28017595",
+      "published_at": "2026-08-17T04:37:12+00:00"
     },
     {
       "source": "AllAfrica",
-      "title": "Nigeria: Sheikh Jingir's Provocative Utterances",
-      "url": "https://allafrica.com/stories/202608170016.html",
-      "published_at": "2026-08-17T02:43:53+00:00"
+      "title": "Nigeria: Bandits Kill 32 in Sokoto Community",
+      "url": "https://allafrica.com/stories/202608170112.html",
+      "published_at": "2026-08-17T04:37:12+00:00"
     },
     {
       "source": "AllAfrica",
-      "title": "Nigeria: Goldberg Unveils Monumental Talking Drum Installation On Cocoa House",
-      "url": "https://allafrica.com/stories/202608170014.html",
-      "published_at": "2026-08-17T02:43:52+00:00"
+      "title": "Cameroon/Malawi: Cameroon Make History, Crush Malawi 3-0 to Win Maiden Wafcon Title",
+      "url": "https://allafrica.com/stories/202608170113.html",
+      "published_at": "2026-08-17T04:37:12+00:00"
     },
     {
       "source": "AllAfrica",
-      "title": "Nigeria: RAI and the Afterlife of a Lagos Art Experiment",
-      "url": "https://allafrica.com/stories/202608170015.html",
-      "published_at": "2026-08-17T02:43:52+00:00"
+      "title": "Rwanda: Nutritionists Recommend Alternative Protein Sources As Beef Prices Remain High",
+      "url": "https://allafrica.com/stories/202608170111.html",
+      "published_at": "2026-08-17T04:37:11+00:00"
     },
     {
       "source": "AllAfrica",
-      "title": "Nigeria: Julius Rone Sets September Target for Nigeria's First Floating LNG Plant",
-      "url": "https://allafrica.com/stories/202608170012.html",
-      "published_at": "2026-08-17T02:43:51+00:00"
+      "title": "Uganda: One Dead, Several Injured in Multiple Crashes On Kampala-Entebbe Expressway",
+      "url": "https://allafrica.com/stories/202608170106.html",
+      "published_at": "2026-08-17T04:37:08+00:00"
     },
     {
       "source": "AllAfrica",
-      "title": "Nigeria: Bbnaija S11 - I Have No Friendship With Oyin, Says Mercedes",
-      "url": "https://allafrica.com/stories/202608170013.html",
-      "published_at": "2026-08-17T02:43:51+00:00"
+      "title": "Nigeria: Many Feared Killed in Fresh Attacks On Benue Communities",
+      "url": "https://allafrica.com/stories/202608170104.html",
+      "published_at": "2026-08-17T04:37:07+00:00"
     },
     {
       "source": "AllAfrica",
-      "title": "Nigeria: Tony Elumelu's Heirs Appoints Pastor Jerry Eze",
-      "url": "https://allafrica.com/stories/202608170010.html",
-      "published_at": "2026-08-17T02:43:50+00:00"
+      "title": "Namibia: Rangers Fight Off Suspected Poachers in Outjo Area Shootout",
+      "url": "https://allafrica.com/stories/202608170105.html",
+      "published_at": "2026-08-17T04:37:07+00:00"
     },
     {
       "source": "AllAfrica",
-      "title": "Nigeria: Oba Elegushi Leads Royalty and Power Brokers to Abuja for Nigeria Golf Summit",
-      "url": "https://allafrica.com/stories/202608170011.html",
-      "published_at": "2026-08-17T02:43:50+00:00"
+      "title": "Zimbabwe: Kariba Boat Tragedy - Death Toll Hits 80",
+      "url": "https://allafrica.com/stories/202608170103.html",
+      "published_at": "2026-08-17T04:37:06+00:00"
     },
     {
       "source": "AllAfrica",
-      "title": "Nigeria: Kola Adeshina - A Shining Star",
-      "url": "https://allafrica.com/stories/202608170009.html",
-      "published_at": "2026-08-17T02:43:49+00:00"
+      "title": "Somalia: U.S. Diplomat Ruth Anne Stevens-Klitz Takes Up Deputy Chief of Mission Role in Somalia",
+      "url": "https://allafrica.com/stories/202608170102.html",
+      "published_at": "2026-08-17T04:37:06+00:00"
     },
     {
       "source": "AllAfrica",
-      "title": "West Africa: Nigeria's Costly Refinery Obsession",
-      "url": "https://allafrica.com/stories/202608170007.html",
-      "published_at": "2026-08-17T02:43:48+00:00"
-    },
-    {
-      "source": "AllAfrica",
-      "title": "Nigeria: Rethinking the CBN's Mandate",
-      "url": "https://allafrica.com/stories/202608170008.html",
-      "published_at": "2026-08-17T02:43:48+00:00"
-    },
-    {
-      "source": "AllAfrica",
-      "title": "Somalia: Somali Referee, Omar Artan's Salzburg Night Completes a Remarkable Journey From Miami to UEFA Super Cup",
-      "url": "https://allafrica.com/stories/202608170005.html",
-      "published_at": "2026-08-17T02:43:47+00:00"
-    },
-    {
-      "source": "AllAfrica",
-      "title": "Nigeria: We Are Still Here, Investing and Excited About Nigeria's Future, Says CEO of Multichoice, Omotosho",
-      "url": "https://allafrica.com/stories/202608170006.html",
-      "published_at": "2026-08-17T02:43:47+00:00"
-    },
-    {
-      "source": "Times of India",
-      "title": "US backs 'Islamic Nato': Trump calls Saudi-Turkey-Pak pact 'big, bold step'",
-      "url": "https://timesofindia.indiatimes.com/world/middle-east/us-backs-islamic-nato-trump-calls-saudi-turkey-pakistan-pact-big-bold-and-important-step/articleshow/133285023.cms",
-      "published_at": "2026-08-17T02:42:10+00:00"
+      "title": "Somalia: UAE, Bahrain Leaders Discuss Economic Cooperation and Regional Stability",
+      "url": "https://allafrica.com/stories/202608170101.html",
+      "published_at": "2026-08-17T04:37:05+00:00"
     },
     {
       "source": "РИА Новости",
-      "title": "Переводчик объяснил, чем Достоевский привлекает европейцев",
-      "url": "https://ria.ru/20260817/dostoevskiy-2111266988.html",
-      "published_at": "2026-08-17T02:40:55+00:00"
+      "title": "В аэропорту Сочи ввели временные ограничения на полеты",
+      "url": "https://ria.ru/20260817/ogranicheniya-2111271906.html",
+      "published_at": "2026-08-17T04:36:56+00:00"
     },
     {
       "source": "РИА Новости",
-      "title": "Слова Медведева об ответе России вызвали переполох в ЕС",
-      "url": "https://ria.ru/20260817/rossiya-2111266848.html",
-      "published_at": "2026-08-17T02:39:12+00:00"
+      "title": "В аэропорту Нижнего Новгорода сняли ограничения на полеты",
+      "url": "https://ria.ru/20260817/ogranicheniya-2111271794.html",
+      "published_at": "2026-08-17T04:36:03+00:00"
     },
     {
-      "source": "Times of India",
-      "title": "6 killed, several injured in stampede-like incident at Bihar’s Lakhisarai temple",
-      "url": "https://timesofindia.indiatimes.com/india/6-killed-several-injured-in-stampede-like-incident-at-bihars-ashokdham-temple/articleshow/133285137.cms",
-      "published_at": "2026-08-17T02:38:19+00:00"
+      "source": "Интерфакс",
+      "title": "Минобороны РФ сообщает о поражении за ночь 205 беспилотников ВСУ",
+      "url": "https://www.interfax.ru/russia/1109659",
+      "published_at": "2026-08-17T04:36:00+00:00"
     },
     {
       "source": "РИА Новости",
-      "title": "Российский боец сбил дрон ВСУ, кинув в него автомат",
-      "url": "https://ria.ru/20260817/spetsoperatsiya-2111266718.html",
-      "published_at": "2026-08-17T02:31:58+00:00"
+      "title": "Названы страны, где можно добывать золото самостоятельно",
+      "url": "https://ria.ru/20260817/zoloto-2111271597.html",
+      "published_at": "2026-08-17T04:35:26+00:00"
+    },
+    {
+      "source": "AllAfrica",
+      "title": "Ethiopia: Ethiopia's New Tourism Destinations Boost Its Appeal to Global Tourists",
+      "url": "https://allafrica.com/stories/202608170100.html",
+      "published_at": "2026-08-17T04:35:18+00:00"
     }
   ]
 }
