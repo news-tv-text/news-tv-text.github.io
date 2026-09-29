@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-29T01:36",
+  "updated_at": "2026-09-29T08:05",
   "stats": {
-    "total_articles": 106973,
+    "total_articles": 107125,
     "analyzed": 30,
     "digests": 1,
     "by_source": {
@@ -18,9 +18,9 @@
       "Times of India": 20,
       "AllAfrica": 20,
       "GDELT: Россия/СНГ (rus)": 0,
-      "GDELT: Китай (zho)": 20,
-      "GDELT: Латинская Америка (spa)": 20,
-      "GDELT: Ближний Восток (ara)": 0,
+      "GDELT: Китай (zho)": 0,
+      "GDELT: Латинская Америка (spa)": 0,
+      "GDELT: Ближний Восток (ara)": 20,
       "GDELT Cloud: Европа": 0,
       "GDELT Cloud: Азия": 0,
       "GDELT Cloud: Ближний Восток": 0,
@@ -30,128 +30,128 @@
   },
   "analysis": {
     "text": "Вот аналитический обзор новостного дайджеста, составленный по заданной структуре.\n\n### 1. КЛЮЧЕВЫЕ СОБЫТИЯ\n\n**Массированная угроза БПЛА в Центральной России**\n- **Беспилотная опасность** объявлена в шести регионах: Волгоградской, Пензенской, Ярославской, Костромской, Владимирской областях и Мордовии. Это волна предупреждений, охватившая обширную территорию от юга до центра России.\n\n**Паралич региональной авиации**\n- Введены временные ограничения на работу аэропортов **Иваново**, **Ярославля** и **Череповца**. Крупнейший московский хаб **Домодедово** перешел на режим «по согласованию» (фактически — работа с перебоями).\n\n**Эскалация в Харьковской области и контроль МАГАТЭ**\n- В Харьковской области прогремели **взрывы**.\n- МАГАТЭ заявило о мониторинге ситуации, чтобы Киев **не использовал британский уран в военных целях**, что указывает на риск применения «грязной бомбы» или ядерных материалов.\n\n**Рекорды ЧМ-2022 и контракты в НХЛ**\n- **Эрлинг Холанд** (Норвегия) установил достижение, забив 7 голов на дебютном ЧМ — первый случай за 52 года.\n- **Неймар** вошел в элитарный клуб, сравнявшись с Пеле по голам на четырех мундиалях.\n- **Егор Чинахов** подписал трехлетний контракт с «Питтсбург Пингвинз».\n\n**Внутренние социальные и законодательные инициативы**\n- Госдума предложила **освободить от налогов** продажу собранных в лесу грибов и ягод (при определенных условиях).\n- Депутаты также готовят закон об обязательном направлении копий решений по административным делам потерпевшим.\n- **Треть работающих россиян** не брали больничный в течение года (данные аналитиков).\n\n**Международные инциденты и логистика**\n- В Калифорнии (США) после Дня независимости **арестовано более 400 человек**.\n- Австралийский премьер **извинился** за неудачную шутку о певице Кайли Миноуг.\n- **15 из 20 судов с удобрениями** освобождены из-под ареста в Ормузском проливе — сигнал о разрядке в цепочках поставок продовольствия.\n\n### 2. СВЯЗИ МЕЖДУ РЕГИОНАМИ\n\n- **БПЛА и логистический коллапс.** Прямая причинно-следственная связь: объявление беспилотной опасности в **Ярославской, Владимирской, Костромской** областях привело к введению временных ограничений в аэропортах **Иваново, Ярославля и Череповца**. Домодедово, находясь в Московской области, перешел на усиленный режим как реакция на общую угрозу в ЦФО.\n- **Украинский фронт и ядерная безопасность.** Взрывы в **Харьковской области** на фоне заявлений МАГАТЭ о британском уране формируют единый контекст: риск тактического применения радиоактивных материалов в зоне конфликта. Контроль агентства напрямую увязан с эскалацией на востоке Украины.\n- **Глобальный рынок удобрений.** Разблокировка судов в **Ормузском проливе** (Иран/ОАЭ) логически связана с продовольственной безопасностью РФ и мира. На фоне внутренних инициатив (налог на грибы) эта новость показывает контраст: РФ стимулирует сбор дикоросов, а глобальный Юг размораживает поставки химудобрений.\n- **Спорт как зеркало депопуляции?** На фоне позитивных спортивных рекордов (Холанд, Неймар, Чинахов) новость о том, что **треть россиян не ходят на больничный**, может указывать либо на высокую производительность, либо (что вероятнее) на страх потери дохода и дефицит кадров — скрытый кризис на рынке труда.\n\n### 3. ПАТТЕРНЫ И ТРЕНДЫ\n\n- **Пространственный паттерн «кольцо угрозы».** Угроза БПЛА охватила практически все регионы **Верхнего Поволжья** (Ярославская, Костромская, Владимирская, Ивановская) плюс южный фланг (Волгоградская) и Мордовию. Это не точечные инциденты, а **системное давление на транспортную инфраструктуру центральной части РФ**.\n- **Дублирование информации разными источниками.** Заголовки о БПЛА и закрытии аэропортов повторяются у ТАСС, РИА Новости и Интерфакса почти дословно. Это говорит о **высокой степени тревожности** редакций и стремлении максимально быстро продублировать экстренную информацию, а также об отсутствии новых фактов после первого сообщения.\n- **Сезонный и ситуационный тренд в США.** Аресты более 400 человек в Калифорнии после Дня независимости — повторяющийся ежегодный паттерн (массовые задержания после праздничных беспорядков) на фоне общего роста преступности в мегаполисах США.\n- **Сдвиг в трудовой этике.** Данные о том, что треть россиян не берут больничные, коррелируют с трендом на «присутствие любой ценой» (presenteeism). Это может быть следствием ужесточения контроля (закон об административных делах — смежный сигнал) или неформальной занятости.\n\n### 4. НЕОЖИДАННЫЕ ИНСАЙТЫ\n\n- **«Эбола» на фоне БПЛА.** Новость о возможном длительном выявлении вируса Эболы у переболевших (до полугода) резко контрастирует с военно-технической повесткой. Это может быть отложенным инфоповодом, готовящим общественное мнение к возможным **биологическим угрозам** в зоне СВО или тропических регионах, куда перемещается логистика РФ.\n- **Контраст «грибы-ракеты».** Законопроект о безналоговой продаже грибов выглядит почти иронично на фоне закрытых аэропортов и беспилотной опасности. Создается образ двойственности: власть стимулирует население к **«натуральному хозяйству»** и выживанию, одновременно перекрывая транспортные артерии.\n- **«Серп и Молот» как символ.** Отмена остановки поездов МЦД-4 на станции с советской символикой «Серп и Молот» (с 6 июля) случайно совпадает по времени с волной БПЛА. Символическая «пролетка без остановки» мимо коммунистического символа может быть прочитана как метафора **прощания с эпохой безопасности** или военно-административного транзита.\n- **Тишина в небе vs голос в эфире.** Глава Тувы обещает оперативно сообщать о поисках пропавших девочек — это единичная гуманитарная новость на фоне массы «жестких» сообщений. Она обнажает тревожное противоречие: пока одни регионы парализованы дронами, в других ищут детей, и государство гарантирует лишь **информационное сопровождение**, а не физическую защиту.",
-    "created_at": "2026-09-29 01:36:36"
+    "created_at": "2026-09-29 08:05:14"
   },
   "recent_articles": [
     {
-      "source": "ТАСС",
-      "title": "На Дальнем Востоке и в Сибири прогнозируют ливни",
-      "url": "https://tass.ru/obschestvo/28160527",
-      "published_at": "2026-09-29T01:29:05+00:00"
-    },
-    {
-      "source": "NYT World",
-      "title": "Netanyahu Visits Emirati Leader After Reports on Warning About Hamas Attack",
-      "url": "https://www.nytimes.com/2026/09/28/world/middleeast/netanyahu-emirati-leader-hamas-attack.html",
-      "published_at": "2026-09-29T01:27:20+00:00"
+      "source": "РИА Новости",
+      "title": "В Подмосковье осудили мужчину, убившего мать из-за раздела имущества",
+      "url": "https://ria.ru/20260929/sud-2120911907.html",
+      "published_at": "2026-09-29T08:00:05+00:00"
     },
     {
       "source": "ТАСС",
-      "title": "Эксперт Кнутов рассказал о преимуществах запуска группировки \"Рассвет\"",
-      "url": "https://tass.ru/armiya-i-opk/28160521",
-      "published_at": "2026-09-29T01:22:08+00:00"
+      "title": "Петербург поддержит льготными займами производителей, пострадавших от БПЛА",
+      "url": "https://tass.ru/ekonomika/28161471",
+      "published_at": "2026-09-29T07:59:54+00:00"
     },
     {
-      "source": "ТАСС",
-      "title": "В Якутии с предприятия взыщут более 124 млн рублей за вред, причиненный Индигирке",
-      "url": "https://tass.ru/obschestvo/28160525",
-      "published_at": "2026-09-29T01:21:19+00:00"
-    },
-    {
-      "source": "ТАСС",
-      "title": "ABC сообщила о доступе хакеров к данным около 3 млн человек из баз Пентагона",
-      "url": "https://tass.ru/mezhdunarodnaya-panorama/28160523",
-      "published_at": "2026-09-29T01:19:15+00:00"
-    },
-    {
-      "source": "BBC World",
-      "title": "OpenAI scraps rollout of new model over safety concerns",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-09-29T01:18:24+00:00"
+      "source": "France24",
+      "title": "'Class sizes of more than 36 people': student protests continue in Paris and beyond",
+      "url": "https://www.france24.com/en/video/20260929-class-sizes-of-more-than-36-people-student-protests-continue-in-paris-and-beyond-1",
+      "published_at": "2026-09-29T07:59:43+00:00"
     },
     {
       "source": "РИА Новости",
-      "title": "Рубио заявил об иностранном следе в инциденте на британской базе Фэрфорд",
-      "url": "https://ria.ru/20260929/ferford-2120862939.html",
-      "published_at": "2026-09-29T01:18:18+00:00"
-    },
-    {
-      "source": "РИА Новости",
-      "title": "Нацисты убивали детей в Киеве в 1941 году, прицельно стреляя им в глаза",
-      "url": "https://ria.ru/20260929/babiy-yar-2120862666.html",
-      "published_at": "2026-09-29T01:17:57+00:00"
-    },
-    {
-      "source": "The Guardian World",
-      "title": "Vietnamese government accused of abducting Melbourne human rights activist",
-      "url": "https://www.theguardian.com/australia-news/2026/sep/29/melbourne-human-rights-activist-tran-hiep-missing-cambodia-ntwnfb",
-      "published_at": "2026-09-29T01:16:28+00:00"
+      "title": "Путину регулярно докладывают о модернизации аэропортов, сообщил Мишустин",
+      "url": "https://ria.ru/20260929/mishustin-2120911552.html",
+      "published_at": "2026-09-29T07:59:00+00:00"
     },
     {
       "source": "ТАСС",
-      "title": "В МЧС уточнили площадь пожара на рынке в Петропавловске-Камчатском",
-      "url": "https://tass.ru/proisshestviya/28160519",
-      "published_at": "2026-09-29T01:15:32+00:00"
+      "title": "В Забайкалье мужчину осудили за стрельбу по людям светошумовыми патронами",
+      "url": "https://tass.ru/proisshestviya/28161467",
+      "published_at": "2026-09-29T07:58:39+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (diariodeburgos.es)",
-      "title": "Junts advierte al Gobierno de que  se está alejando del acuerdo",
-      "url": "https://www.diariodeburgos.es/noticia/z9a055ebc-3f75-420d-ac8477ae7d343fe5/202609/junts-advierte-al-gobierno-de-que-se-esta-alejando-del-acuerdo",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "ТАСС",
+      "title": "Галибаф: никто в регионе не будет продавать нефть, если Иран лишится такой возможности",
+      "url": "https://tass.ru/ekonomika/28161443",
+      "published_at": "2026-09-29T07:58:25+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (t13.cl)",
-      "title": "Crónica : Así fue la primera ronda de negocios entre empresarios de las Malvinas y de Punta Arenas",
-      "url": "https://www.t13.cl/noticia/ex-ante/politica/cronica-asi-fue-primera-ronda-negocios-entre-empresarios-las-malvinas-punta-are-28-9-2026",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "ТАСС",
+      "title": "Мельникова выдвинули на пост первого вице-спикера Госдумы",
+      "url": "https://tass.ru/politika/28161453",
+      "published_at": "2026-09-29T07:57:55+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (urgente24.com)",
-      "title": "Top 10 de Latinoamérica : sacudón financiero , giro político y crisis fiscal en la región , pobreza y desempleo",
-      "url": "https://urgente24.com/mundo/top-10-latinoamerica-sacudon-financiero-giro-politico-y-crisis-fiscal-la-region-pobreza-y-desempleo-n633614",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "ТАСС",
+      "title": "РФ будет добиваться признания убийств в Бабьем Яру актом геноцида народа СССР",
+      "url": "https://tass.ru/obschestvo/28161317",
+      "published_at": "2026-09-29T07:57:29+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (eleconomista.com.ar)",
-      "title": "Una app argentina promete frenar la deserción universitaria : cómo funciona Autorregular",
-      "url": "https://eleconomista.com.ar/actualidad/investigadores-conicet-uba-crearon-una-app-evitar-abandono-universitario-n98474",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "РИА Новости",
+      "title": "Прокуратура организует личный прием жителей Кубринска, где сгорел завод",
+      "url": "https://ria.ru/20260929/prokuratura-2120911142.html",
+      "published_at": "2026-09-29T07:57:24+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (elespectador.com)",
-      "title": "Niegan tutela de alias  Pinocho  contra el Gobierno por suspensión de diálogos con las ACSN",
-      "url": "https://www.elespectador.com/judicial/niegan-tutela-de-alias-pinocho-contra-el-gobierno-por-suspension-de-dialogos-con-las-acsn/",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "РИА Новости",
+      "title": "В Запорожской области женщина погибла при ударе ВСУ",
+      "url": "https://ria.ru/20260929/zaporozhskaya-2120910605.html",
+      "published_at": "2026-09-29T07:56:26+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (laverdadonline.com)",
-      "title": "Máximo Kirchhner afirmó que Cristina tiene  la voluntad  de ser candidata en las elecciones de 2027",
-      "url": "https://laverdadonline.com/maximo-kirchhner-afirmo-que-cristina-tiene-la-voluntad-de-ser-candidata-en-las-elecciones-de-2027/",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "ТАСС",
+      "title": "Посольство РФ предупредило Британию о последствиях плана по блокаде Калининграда",
+      "url": "https://tass.ru/politika/28161435",
+      "published_at": "2026-09-29T07:55:37+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (elinformador.com.co)",
-      "title": "Estos son los documentos que revelan el pasado de alias  Pinocho  dentro de Antinarcóticos",
-      "url": "https://www.elinformador.com.co/index.php/judiciales/72-judiciales-nacional/359506-estos-son-los-documentos-que-revelan-el-pasado-de-alias-pinocho-dentro-de-antinarcoticos",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "РИА Новости",
+      "title": "В Кубринске продолжают разбор завалов и поиск тел погибших после пожара",
+      "url": "https://ria.ru/20260929/mchs-2120909977.html",
+      "published_at": "2026-09-29T07:54:03+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (acn.com.ve)",
-      "title": "El Autobús de Nancy  conmemorará tercer aniversario",
-      "url": "https://acn.com.ve/autobus-nancy-conmemorara-tercer-aniversario-el-29-de-septiembre/",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "ТАСС",
+      "title": "Зюганова единогласно избрали руководителем фракции КПРФ в Госдуме",
+      "url": "https://tass.ru/politika/28161447",
+      "published_at": "2026-09-29T07:54:02+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (telemundodallas.com)",
-      "title": "Hallan cámara oculta en baño de un Whataburger en Texas",
-      "url": "https://www.telemundodallas.com/noticias/local/hallan-camara-oculta-en-bano-de-un-whataburguer-en-texas/1968654/",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "Интерфакс",
+      "title": "OpenAI отменила релиз новой ИИ-модели из-за опасений по поводу безопасности",
+      "url": "https://www.interfax.ru/business/1119101",
+      "published_at": "2026-09-29T07:54:00+00:00"
     },
     {
-      "source": "GDELT: Латинская Америка (spa) (laverdadonline.com)",
-      "title": "III Convención de la red Panhispánica de lenguaje claro y accesible - La Verdad Online de Junín , Buenos Aires , Argentina",
-      "url": "https://laverdadonline.com/iii-convencion-de-la-red-panhispanica-de-lenguaje-claro-y-accesible/",
-      "published_at": "2026-09-29T01:15:00+00:00"
+      "source": "DW (Германия)",
+      "title": "Germany news: Merz revolts over EU budget, report says",
+      "url": "https://www.dw.com/en/germany-news-merz-revolts-over-eu-budget-report-says/live-79468663?maca=en-rss-en-all-1573-rdf",
+      "published_at": "2026-09-29T07:54:00+00:00"
+    },
+    {
+      "source": "РИА Новости",
+      "title": "В Севастополе ввели новую схему подачи электричества",
+      "url": "https://ria.ru/20260929/sevastopol-2120909708.html",
+      "published_at": "2026-09-29T07:53:41+00:00"
+    },
+    {
+      "source": "ТАСС",
+      "title": "В ХМАО трех студентов осудили по делу о сбыте наркотиков",
+      "url": "https://tass.ru/proisshestviya/28161429",
+      "published_at": "2026-09-29T07:53:05+00:00"
+    },
+    {
+      "source": "РИА Новости",
+      "title": "Глава Росавиации назвал аэропорты с наибольшим ростом пассажиропотока",
+      "url": "https://ria.ru/20260929/rosaviatsija-2120908950.html",
+      "published_at": "2026-09-29T07:52:54+00:00"
+    },
+    {
+      "source": "РИА Новости",
+      "title": "Молдавская оппозиция инициировала отстранение Санду от должности",
+      "url": "https://ria.ru/20260929/moldaviya-2120909029.html",
+      "published_at": "2026-09-29T07:52:47+00:00"
+    },
+    {
+      "source": "ТАСС",
+      "title": "КСИР пригласил американцев посетить Иран",
+      "url": "https://tass.ru/mezhdunarodnaya-panorama/28161333",
+      "published_at": "2026-09-29T07:52:44+00:00"
     }
   ]
 }
