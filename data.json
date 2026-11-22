@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-22T02:56",
+  "updated_at": "2026-11-22T10:52",
   "stats": {
-    "total_articles": 139412,
+    "total_articles": 139600,
     "analyzed": 30,
     "digests": 1,
     "by_source": {
@@ -17,9 +17,9 @@
       "DW (Германия)": 20,
       "Times of India": 20,
       "AllAfrica": 20,
-      "GDELT: Россия/СНГ (rus)": 0,
-      "GDELT: Китай (zho)": 0,
-      "GDELT: Латинская Америка (spa)": 0,
+      "GDELT: Россия/СНГ (rus)": 20,
+      "GDELT: Китай (zho)": 20,
+      "GDELT: Латинская Америка (spa)": 20,
       "GDELT: Ближний Восток (ara)": 0,
       "GDELT Cloud: Европа": 0,
       "GDELT Cloud: Азия": 0,
@@ -30,128 +30,128 @@
   },
   "analysis": {
     "text": "Вот аналитический обзор новостного дайджеста, составленный по заданной структуре.\n\n### 1. КЛЮЧЕВЫЕ СОБЫТИЯ\n\n**Массированная угроза БПЛА в Центральной России**\n- **Беспилотная опасность** объявлена в шести регионах: Волгоградской, Пензенской, Ярославской, Костромской, Владимирской областях и Мордовии. Это волна предупреждений, охватившая обширную территорию от юга до центра России.\n\n**Паралич региональной авиации**\n- Введены временные ограничения на работу аэропортов **Иваново**, **Ярославля** и **Череповца**. Крупнейший московский хаб **Домодедово** перешел на режим «по согласованию» (фактически — работа с перебоями).\n\n**Эскалация в Харьковской области и контроль МАГАТЭ**\n- В Харьковской области прогремели **взрывы**.\n- МАГАТЭ заявило о мониторинге ситуации, чтобы Киев **не использовал британский уран в военных целях**, что указывает на риск применения «грязной бомбы» или ядерных материалов.\n\n**Рекорды ЧМ-2022 и контракты в НХЛ**\n- **Эрлинг Холанд** (Норвегия) установил достижение, забив 7 голов на дебютном ЧМ — первый случай за 52 года.\n- **Неймар** вошел в элитарный клуб, сравнявшись с Пеле по голам на четырех мундиалях.\n- **Егор Чинахов** подписал трехлетний контракт с «Питтсбург Пингвинз».\n\n**Внутренние социальные и законодательные инициативы**\n- Госдума предложила **освободить от налогов** продажу собранных в лесу грибов и ягод (при определенных условиях).\n- Депутаты также готовят закон об обязательном направлении копий решений по административным делам потерпевшим.\n- **Треть работающих россиян** не брали больничный в течение года (данные аналитиков).\n\n**Международные инциденты и логистика**\n- В Калифорнии (США) после Дня независимости **арестовано более 400 человек**.\n- Австралийский премьер **извинился** за неудачную шутку о певице Кайли Миноуг.\n- **15 из 20 судов с удобрениями** освобождены из-под ареста в Ормузском проливе — сигнал о разрядке в цепочках поставок продовольствия.\n\n### 2. СВЯЗИ МЕЖДУ РЕГИОНАМИ\n\n- **БПЛА и логистический коллапс.** Прямая причинно-следственная связь: объявление беспилотной опасности в **Ярославской, Владимирской, Костромской** областях привело к введению временных ограничений в аэропортах **Иваново, Ярославля и Череповца**. Домодедово, находясь в Московской области, перешел на усиленный режим как реакция на общую угрозу в ЦФО.\n- **Украинский фронт и ядерная безопасность.** Взрывы в **Харьковской области** на фоне заявлений МАГАТЭ о британском уране формируют единый контекст: риск тактического применения радиоактивных материалов в зоне конфликта. Контроль агентства напрямую увязан с эскалацией на востоке Украины.\n- **Глобальный рынок удобрений.** Разблокировка судов в **Ормузском проливе** (Иран/ОАЭ) логически связана с продовольственной безопасностью РФ и мира. На фоне внутренних инициатив (налог на грибы) эта новость показывает контраст: РФ стимулирует сбор дикоросов, а глобальный Юг размораживает поставки химудобрений.\n- **Спорт как зеркало депопуляции?** На фоне позитивных спортивных рекордов (Холанд, Неймар, Чинахов) новость о том, что **треть россиян не ходят на больничный**, может указывать либо на высокую производительность, либо (что вероятнее) на страх потери дохода и дефицит кадров — скрытый кризис на рынке труда.\n\n### 3. ПАТТЕРНЫ И ТРЕНДЫ\n\n- **Пространственный паттерн «кольцо угрозы».** Угроза БПЛА охватила практически все регионы **Верхнего Поволжья** (Ярославская, Костромская, Владимирская, Ивановская) плюс южный фланг (Волгоградская) и Мордовию. Это не точечные инциденты, а **системное давление на транспортную инфраструктуру центральной части РФ**.\n- **Дублирование информации разными источниками.** Заголовки о БПЛА и закрытии аэропортов повторяются у ТАСС, РИА Новости и Интерфакса почти дословно. Это говорит о **высокой степени тревожности** редакций и стремлении максимально быстро продублировать экстренную информацию, а также об отсутствии новых фактов после первого сообщения.\n- **Сезонный и ситуационный тренд в США.** Аресты более 400 человек в Калифорнии после Дня независимости — повторяющийся ежегодный паттерн (массовые задержания после праздничных беспорядков) на фоне общего роста преступности в мегаполисах США.\n- **Сдвиг в трудовой этике.** Данные о том, что треть россиян не берут больничные, коррелируют с трендом на «присутствие любой ценой» (presenteeism). Это может быть следствием ужесточения контроля (закон об административных делах — смежный сигнал) или неформальной занятости.\n\n### 4. НЕОЖИДАННЫЕ ИНСАЙТЫ\n\n- **«Эбола» на фоне БПЛА.** Новость о возможном длительном выявлении вируса Эболы у переболевших (до полугода) резко контрастирует с военно-технической повесткой. Это может быть отложенным инфоповодом, готовящим общественное мнение к возможным **биологическим угрозам** в зоне СВО или тропических регионах, куда перемещается логистика РФ.\n- **Контраст «грибы-ракеты».** Законопроект о безналоговой продаже грибов выглядит почти иронично на фоне закрытых аэропортов и беспилотной опасности. Создается образ двойственности: власть стимулирует население к **«натуральному хозяйству»** и выживанию, одновременно перекрывая транспортные артерии.\n- **«Серп и Молот» как символ.** Отмена остановки поездов МЦД-4 на станции с советской символикой «Серп и Молот» (с 6 июля) случайно совпадает по времени с волной БПЛА. Символическая «пролетка без остановки» мимо коммунистического символа может быть прочитана как метафора **прощания с эпохой безопасности** или военно-административного транзита.\n- **Тишина в небе vs голос в эфире.** Глава Тувы обещает оперативно сообщать о поисках пропавших девочек — это единичная гуманитарная новость на фоне массы «жестких» сообщений. Она обнажает тревожное противоречие: пока одни регионы парализованы дронами, в других ищут детей, и государство гарантирует лишь **информационное сопровождение**, а не физическую защиту.",
-    "created_at": "2026-11-22 02:56:36"
+    "created_at": "2026-11-22 10:52:54"
   },
   "recent_articles": [
     {
       "source": "ТАСС",
-      "title": "Командир Грим рассказал об уничтожении \"дронов-ждунов\" ВСУ под Сумами",
-      "url": "https://tass.ru/armiya-i-opk/28343175",
-      "published_at": "2026-11-22T02:48:40+00:00"
-    },
-    {
-      "source": "ТАСС",
-      "title": "Бойцы \"Севера\" уничтожили 10 БПЛА ВСУ над Курской областью",
-      "url": "https://tass.ru/armiya-i-opk/28343173",
-      "published_at": "2026-11-22T02:46:07+00:00"
-    },
-    {
-      "source": "ТАСС",
-      "title": "Врач Сидоренкова оценила вероятность анафилактического шока из-за Вакцины",
-      "url": "https://tass.ru/obschestvo/28343167",
-      "published_at": "2026-11-22T02:43:00+00:00"
-    },
-    {
-      "source": "Times of India",
-      "title": "Brooklyn musician says landlord ignored cracks before collapse killed 8; sues",
-      "url": "https://timesofindia.indiatimes.com/world/us/a-brooklyn-musician-says-he-photographed-cracks-weeks-before-an-apartment-building-collapsed-and-killed-eight-people-his-new-lawsuit-claims-the-landlord-ignored-his-warnings-as-construction-continued-next-door/articleshow/136046165.cms",
-      "published_at": "2026-11-22T02:35:48+00:00"
-    },
-    {
-      "source": "ТАСС",
-      "title": "Detik: в Индонезии произошел пожар на кондитерской фабрике",
-      "url": "https://tass.ru/proisshestviya/28343169",
-      "published_at": "2026-11-22T02:32:48+00:00"
+      "title": "В Челябинской области произошло ДТП с автобусом",
+      "url": "https://tass.ru/proisshestviya/28343679",
+      "published_at": "2026-11-22T10:45:52+00:00"
     },
     {
       "source": "РИА Новости",
-      "title": "МИД Литвы сделал заявление после опасности БПЛА в Калининградской области",
-      "url": "https://ria.ru/20261122/litva-2133203859.html",
-      "published_at": "2026-11-22T02:32:23+00:00"
-    },
-    {
-      "source": "ТАСС",
-      "title": "Политик Толстой считает, что возвращение в ЕС навредит Британии",
-      "url": "https://tass.ru/mezhdunarodnaya-panorama/28343165",
-      "published_at": "2026-11-22T02:31:47+00:00"
-    },
-    {
-      "source": "ТАСС",
-      "title": "Духовник Лыковой рассказал, какими продуктами питается отшельница зимой",
-      "url": "https://tass.ru/obschestvo/28343161",
-      "published_at": "2026-11-22T02:29:55+00:00"
-    },
-    {
-      "source": "Times of India",
-      "title": "Former US President George Washington's hair sells for $4,000",
-      "url": "https://timesofindia.indiatimes.com/world/us/former-us-president-george-washingtons-hair-sells-for-4000/articleshow/136066072.cms",
-      "published_at": "2026-11-22T02:28:53+00:00"
-    },
-    {
-      "source": "Times of India",
-      "title": "Builder told to return Rs 1.96 cr with 12% interest to family; here's why",
-      "url": "https://timesofindia.indiatimes.com/city/chandigarh/chandigarh-family-pays-rs-1-9-crore-for-commercial-unit-to-run-cloth-business-gets-no-possession-or-assured-returns-beyond-rs-2-2-lakh-consumer-commission-orders-rs-1-96-crore-refund-with-12-interest-and-rs-75000-compensation/articleshow/136065879.cms",
-      "published_at": "2026-11-22T02:28:31+00:00"
-    },
-    {
-      "source": "Интерфакс",
-      "title": "В Мексике задержан глава крупного наркокартеля Меса Флорес",
-      "url": "https://www.interfax.ru/world/1130627",
-      "published_at": "2026-11-22T02:25:00+00:00"
-    },
-    {
-      "source": "ТАСС",
-      "title": "Таубер: закон о мобилизации в Молдавии позволит Санду остаться у власти",
-      "url": "https://tass.ru/mezhdunarodnaya-panorama/28343163",
-      "published_at": "2026-11-22T02:17:01+00:00"
-    },
-    {
-      "source": "Al Jazeera",
-      "title": "Displaced Palestinians protest as Israeli air strikes continue in Gaza",
-      "url": "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza?traffic_source=rss",
-      "published_at": "2026-11-22T02:14:18+00:00"
-    },
-    {
-      "source": "ТАСС",
-      "title": "В КНР пригрозили контрмерами за ограничение доступа к телефонии в США",
-      "url": "https://tass.ru/mezhdunarodnaya-panorama/28343159",
-      "published_at": "2026-11-22T02:13:35+00:00"
-    },
-    {
-      "source": "ТАСС",
-      "title": "Эксперт Козлов назвал проблемные группы устойчивых к антибиотикам бактерий",
-      "url": "https://tass.ru/obschestvo/28343157",
-      "published_at": "2026-11-22T02:12:36+00:00"
+      "title": "Прощание с писателем Альбертом Ивановым пройдет 25 ноября в Москве",
+      "url": "https://ria.ru/20261122/ivanov-2133244227.html",
+      "published_at": "2026-11-22T10:43:44+00:00"
     },
     {
       "source": "РИА Новости",
-      "title": "Экипаж \"бесконечного круиза\" назвал жизнь на лайнере адом",
-      "url": "https://ria.ru/20261122/beskonechnyy-kruiz-2133203458.html",
-      "published_at": "2026-11-22T02:11:03+00:00"
-    },
-    {
-      "source": "РИА Новости",
-      "title": "В Рыбном союзе назвали главную альтернативу красной икре",
-      "url": "https://ria.ru/20261122/ikra-2133203626.html",
-      "published_at": "2026-11-22T02:10:26+00:00"
+      "title": "Минобороны рассказало об освобождении Соснового Бора в Харьковской области",
+      "url": "https://ria.ru/20261122/osvobozhdenie-2133244047.html",
+      "published_at": "2026-11-22T10:39:49+00:00"
     },
     {
       "source": "Times of India",
-      "title": "9 family members killed as pilgrims' vehicle crashes into truck in Rajasthan",
-      "url": "https://timesofindia.indiatimes.com/city/jaipur/9-devotees-returning-from-khatu-shyam-temple-killed-as-their-vehicle-rams-parked-truck-in-rajasthans-kota/articleshow/136065930.cms",
-      "published_at": "2026-11-22T02:09:05+00:00"
+      "title": "Phoenix man's 2015 deed had wrong address; court voids rival company's deeds",
+      "url": "https://timesofindia.indiatimes.com/world/us/a-phoenix-man-received-a-deed-from-his-father-in-2015-but-its-street-address-pointed-to-another-property-four-years-later-a-company-claimed-the-same-land-and-a-2026-appeals-court-upheld-the-invalidation-of-its-competing-deeds/articleshow/136049095.cms",
+      "published_at": "2026-11-22T10:36:09+00:00"
+    },
+    {
+      "source": "Times of India",
+      "title": "Bea Gaddy's Thanksgiving charity down to 8 turkeys until José Andrés steps in",
+      "url": "https://timesofindia.indiatimes.com/world/us/in-1981-bea-gaddy-began-feeding-neighbours-in-baltimore-on-thanksgiving-45-years-later-her-daughter-had-only-eight-turkeys-for-thousands-until-chef-jose-andres-and-maryland-prison-workers-stepped-in-to-help/articleshow/136071047.cms",
+      "published_at": "2026-11-22T10:35:40+00:00"
     },
     {
       "source": "ТАСС",
-      "title": "Бойцы \"Севера\" уничтожили за сутки 33 пункта управления БПЛА и 262 дрона ВСУ",
-      "url": "https://tass.ru/armiya-i-opk/28343137",
-      "published_at": "2026-11-22T02:07:30+00:00"
+      "title": "Совет НАТО обсудит инцидент с упавшими ракетами в Польше",
+      "url": "https://tass.ru/mezhdunarodnaya-panorama/28343667",
+      "published_at": "2026-11-22T10:33:47+00:00"
     },
     {
       "source": "РИА Новости",
-      "title": "Бойцы групп подвоза \"Центра\" отражают атаки дронов ВСУ",
-      "url": "https://ria.ru/20261122/spetsoperatsiya-2133203236.html",
-      "published_at": "2026-11-22T02:07:21+00:00"
+      "title": "Родственники писателя Альберта Иванова назвали причину его смерти",
+      "url": "https://ria.ru/20261122/ivanov-2133243807.html",
+      "published_at": "2026-11-22T10:33:21+00:00"
+    },
+    {
+      "source": "ТАСС",
+      "title": "В Москве прошло прощание с режиссером монтажа Лебедевым",
+      "url": "https://tass.ru/obschestvo/28343673",
+      "published_at": "2026-11-22T10:31:34+00:00"
+    },
+    {
+      "source": "ТАСС",
+      "title": "Ход СВО. Сводка Минобороны РФ за 22 ноября",
+      "url": "https://tass.ru/armiya-i-opk/28343601",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (regions.ru)",
+      "title": "Морозы до −5 градусов и ниже : когда в Подмосковье начнется зимняя погода",
+      "url": "https://regions.ru/obschestvo/morozy-do-5-gradusov-i-nizhe-kogda-v-podmoskove-nachnetsja-zimnjaja-pogoda",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (24tv.ua)",
+      "title": "Зарплаты в Украине выросли – какие профессии самые высокооплачиваемые и востребованные",
+      "url": "https://24tv.ua/business/ru/zarplaty-v-ukraine-vyrosli-na-80-procentov-kakie-professii-javljajutsja-samymi-vysokooplachivaemymi-i-vostrebovannymi_n3182283",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (24tv.ua)",
+      "title": "Выделили 205 миллиардов на войну эксперт о бюджете России и планах вести войну весь 2027 год",
+      "url": "https://24tv.ua/geopolitics/ru/vydelili-205-milliardov-na-vojnu-jekspert-o-bjudzhete-rossii-i-planah-vesti-vojnu-v-techenie-vsego-2027-goda_n3212256",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (vesti.ru)",
+      "title": "Губернатор Севастополя сообщил о снабжении города всем необходимым",
+      "url": "https://www.vesti.ru/ns/gubernator-sevastopolya-soobshchil-o-snabzhenii-goroda-vsem-neobkhodimym",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (regions.ru)",
+      "title": "Не можете заставить себя тренироваться ? Попробуйте правило пяти минут",
+      "url": "https://regions.ru/zdorove/ne-mozhete-zastavit-sebja-trenirovatsja-poprobujte-pravilo-pjati-minut",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (profile.ru)",
+      "title": "Обрушившиеся на Сочи ливни подтопили гостиницу , 2 автодороги и придомовые территории",
+      "url": "https://profile.ru/news/accidents/obrushivshiesya-na-sochi-livni-podtopili-gostinicu-2-avtodorogi-i-pridomovye-territorii-1926512/",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (24tv.ua)",
+      "title": "генерал Романенко оценил гарантии безопасности Запада для Украины",
+      "url": "https://24tv.ua/ru/general-romanenko-ocenil-garantii-bezopasnosti-predostavlennye-zapadom-ukraine_n3212247",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (carexpo.ru)",
+      "title": "Рейтинг автомобилей с пробегом за октябрь 2026 : какие машины чаще покупают в России",
+      "url": "https://carexpo.ru/reyting-avtomobilej-s-probegom-za-oktyabr-2026-kakie-mashiny-chashche-pokupayut-v-rossii/",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (playground.ru)",
+      "title": "Шоураннер  Бегущего по лезвию 2099  консультировалась с Ридли Скоттом по канону сериала",
+      "url": "https://www.playground.ru/misc/news/shouranner_beguschego_po_lezviyu_2099_konsultirovalas_s_ridli_skottom_po_kanonu_seriala-1892904",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (teleport2001.ru)",
+      "title": "Продукты к Новому году : когда их покупать",
+      "url": "https://www.teleport2001.ru/news/2026-11-22/221605-produkty-k-novomu-godu-kakie-kupit-ranshe-i-pered-prazdnikom.html",
+      "published_at": "2026-11-22T10:30:00+00:00"
+    },
+    {
+      "source": "GDELT: Россия/СНГ (rus) (haqqin.az)",
+      "title": "Алиев поздравил президента Ливана",
+      "url": "https://haqqin.az/newsarchive/399086",
+      "published_at": "2026-11-22T10:30:00+00:00"
     }
   ]
 }
